@@ -19,19 +19,15 @@ document.addEventListener('click', e=>{
     const id = card.dataset.projid;
     const dlg = document.getElementById(id);
     if(dlg){
-      // open dialog (polyfill: dialog is widespread now)
-      try{ dlg.showModal(); }
+      try { dlg.showModal(); }
       catch(err){
-        // fallback for older browsers
         dlg.style.display = 'block';
         dlg.setAttribute('open','');
       }
-      // trap focus if needed (light)
       return;
     }
   }
 
-  // close buttons
   const closeBtn = e.target.closest('[data-close]');
   if(closeBtn){
     const dlg = closeBtn.closest('dialog.proj-modal');
@@ -42,7 +38,6 @@ document.addEventListener('click', e=>{
   }
 });
 
-// close modal on ESC
 document.addEventListener('keydown', e=>{
   if(e.key === 'Escape'){
     document.querySelectorAll('dialog.proj-modal').forEach(d=>{
@@ -50,5 +45,3 @@ document.addEventListener('keydown', e=>{
     });
   }
 });
-
-
