@@ -224,6 +224,15 @@ h3{
   font-weight: 700;
 }
 
+/* LinkedIn image */
+.linkedin-img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
 /* footer */
 .site-footer{
   padding:1rem 0;
@@ -317,3 +326,4 @@ dialog.proj-modal::backdrop{
 
 /* small UX */
 a{transition:all .18s ease}
+
