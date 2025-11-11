@@ -175,32 +175,9 @@ h3{
   min-height: 300px;
 }
 
-/* ✅ Bande colorée élégante */
+/* ❌ Bandeaux retirés complètement */
 .proj-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 6px;
-  background: var(--accent-1);
-}
-
-/* === Couleurs par catégorie === */
-[data-cat="academique"]::before {
-  background: var(--accent-1);
-}
-[data-cat="analyse"]::before {
-  background: var(--accent-2);
-}
-[data-cat="valoriser"]::before {
-  background: #b9987f;
-}
-[data-cat="developper"]::before {
-  background: #a57d67;
-}
-[data-cat="pro"]::before {
-  background: #8b6a58;
+  display: none;
 }
 
 .proj-card:hover {
@@ -340,5 +317,3 @@ dialog.proj-modal::backdrop{
 
 /* small UX */
 a{transition:all .18s ease}
-
-
