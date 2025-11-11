@@ -285,3 +285,42 @@ dialog.proj-modal::backdrop{
 
 /* small UX */
 a{transition:all .18s ease}
+
+/* ✅ Uniformisation des cartes projets (grilles équilibrées) */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  justify-items: stretch;
+}
+
+/* ✅ Taille visuelle uniforme même avec 1 ou 2 cartes */
+.proj-card {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ✅ Harmonisation image */
+.proj-thumb img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+/* ✅ Petites cartes pour les sections 1.2, 1.3 et 1.4 */
+.subsection:nth-of-type(2) .proj-card,
+.subsection:nth-of-type(3) .proj-card,
+.subsection:nth-of-type(4) .proj-card {
+  max-width: 280px;
+  margin: 0 auto;
+}
+.subsection:nth-of-type(2) .projects-grid,
+.subsection:nth-of-type(3) .projects-grid,
+.subsection:nth-of-type(4) .projects-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  justify-content: center;
+}
