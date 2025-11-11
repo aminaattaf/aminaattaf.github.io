@@ -18,6 +18,7 @@
       <nav class="nav">
         <a href="#about">À propos</a>
         <a href="#projects">Projets</a>
+        <a href="#testimonials">Témoignages</a>
         <a href="#contact">Contact</a>
         <a class="btn-outline" href="cv.pdf" target="_blank">CV</a>
       </nav>
@@ -60,6 +61,7 @@
         <div class="category">
           <h4 class="category-title">Catégorie 1 : Projets professionnels (stage & alternance)</h4>
 
+          <!-- 1.1 Tableaux de bord Power BI -->
           <div class="subsection">
             <h5>1.1 Tableaux de bord Power BI</h5>
             <div class="projects-grid">
@@ -97,6 +99,7 @@
             </div>
           </div>
 
+          <!-- 1.2 Outils & supports internes -->
           <div class="subsection">
             <h5>1.2 Outils et supports internes</h5>
             <div class="projects-grid">
@@ -139,6 +142,7 @@
         <div class="category">
           <h4 class="category-title">Catégorie 2 : Projets académiques</h4>
 
+          <!-- 2.1 Traiter -->
           <div class="subsection">
             <h5>2.1 Traiter (Collecte & préparation)</h5>
             <div class="projects-grid">
@@ -234,7 +238,7 @@
                 </div>
               </article>
 
-              <article class="proj-card" data-cat="valoriser" data-projid="proj-energie-2">
+              <article class="proj-card" data-cat="valoriser" data-projid="proj-energie">
                 <div class="proj-thumb"><img src="images/proj-energie.png" alt="Consommation énergétique"></div>
                 <div class="proj-info">
                   <h4>Consommation énergétique — 2ᵉ année</h4>
@@ -266,6 +270,21 @@
             </div>
           </div>
         </div>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS / AVIS LINKEDIN -->
+    <section id="testimonials" class="section alt">
+      <div class="container testimonials-grid">
+        <div class="testimonial-text">
+          <h3>Avis & Témoignages LinkedIn</h3>
+          <p>Découvrez les retours de mon réseau professionnel sur LinkedIn concernant mes missions en alternance et stage. Cliquez sur le bouton pour accéder directement au post complet et aux commentaires.</p>
+          <a class="btn-primary" href="https://www.linkedin.com/posts/amina-attaf_alternance-stage-reconnaissance-activity-7367095221072969728-uIzB" target="_blank" rel="noopener">Voir le post LinkedIn</a>
+        </div>
+        <div class="testimonial-image">
+          <img src="images/linkedin-post.png" alt="Post LinkedIn" />
+        </div>
       </div>
     </section>
 
@@ -290,49 +309,9 @@
     </div>
   </footer>
 
-  <!-- DIALOGUES MODALS -->
-  <!-- Exemples pour tous les projets (répéter et adapter les contenus) -->
-  <dialog class="proj-modal" id="proj-portefeuille">
-    <button class="modal-close" data-close>&times;</button>
-    <div class="modal-body">
-      <h4>Suivi du portefeuille jeune</h4>
-      <p>Tableau de bord détaillé pour suivre les parcours et indicateurs des jeunes accompagnés.</p>
-      <div class="modal-gallery">
-        <img src="images/proj-portefeuille-1.png" alt="">
-        <img src="images/proj-portefeuille-2.png" alt="">
-      </div>
-    </div>
-  </dialog>
-
-  <dialog class="proj-modal" id="proj-flux">
-    <button class="modal-close" data-close>&times;</button>
-    <div class="modal-body">
-      <h4>Flux de données Power BI</h4>
-      <p>Mise en place et automatisation des flux d'alimentation et transformations.</p>
-      <div class="modal-gallery">
-        <img src="images/proj-flux-1.png" alt="">
-      </div>
-    </div>
-  </dialog>
-
-  <dialog class="proj-modal" id="proj-suivi-activite">
-    <button class="modal-close" data-close>&times;</button>
-    <div class="modal-body">
-      <h4>Suivi d'activité</h4>
-      <p>Dashboards pour le suivi opérationnel des activités et indicateurs.</p>
-    </div>
-  </dialog>
-
-  <dialog class="proj-modal" id="proj-reseau">
-    <button class="modal-close" data-close>&times;</button>
-    <div class="modal-body">
-      <h4>Participation du réseau</h4>
-      <p>Outils d’analyse et de mesure de la participation des acteurs du réseau.</p>
-    </div>
-  </dialog>
-
-  <!-- Tu répètes la même structure pour chaque projet (proj-deneb, proj-video, proj-notion-db, etc.) -->
-
   <script src="script.js"></script>
 </body>
 </html>
+
+
+
