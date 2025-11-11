@@ -18,7 +18,6 @@
       <nav class="nav">
         <a href="#about">À propos</a>
         <a href="#projects">Projets</a>
-        <a href="#testimonials">Témoignages</a>
         <a href="#contact">Contact</a>
         <a class="btn-outline" href="cv.pdf" target="_blank">CV</a>
       </nav>
@@ -61,7 +60,6 @@
         <div class="category">
           <h4 class="category-title">Catégorie 1 : Projets professionnels (stage & alternance)</h4>
 
-          <!-- 1.1 Tableaux de bord Power BI -->
           <div class="subsection">
             <h5>1.1 Tableaux de bord Power BI</h5>
             <div class="projects-grid">
@@ -99,7 +97,6 @@
             </div>
           </div>
 
-          <!-- 1.2 Outils & supports internes -->
           <div class="subsection">
             <h5>1.2 Outils et supports internes</h5>
             <div class="projects-grid">
@@ -142,7 +139,6 @@
         <div class="category">
           <h4 class="category-title">Catégorie 2 : Projets académiques</h4>
 
-          <!-- 2.1 Traiter -->
           <div class="subsection">
             <h5>2.1 Traiter (Collecte & préparation)</h5>
             <div class="projects-grid">
@@ -238,7 +234,7 @@
                 </div>
               </article>
 
-              <article class="proj-card" data-cat="valoriser" data-projid="proj-energie">
+              <article class="proj-card" data-cat="valoriser" data-projid="proj-energie-2">
                 <div class="proj-thumb"><img src="images/proj-energie.png" alt="Consommation énergétique"></div>
                 <div class="proj-info">
                   <h4>Consommation énergétique — 2ᵉ année</h4>
@@ -273,53 +269,6 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section id="testimonials" class="section alt">
-      <div class="container">
-        <h3>Témoignages</h3>
-        <p class="muted">Quelques retours de mes collègues et encadrants.</p>
-
-        <div class="testimonials-grid">
-
-          <!-- Témoignage 1 -->
-          <div class="testimonial-text">
-            <p>“Amina a su transformer nos données complexes en tableaux de bord clairs et exploitables. Son travail sur Power BI a véritablement amélioré nos reportings internes.”</p>
-            <a class="btn-primary" href="#testimonial-1">Voir le témoignage complet</a>
-          </div>
-          <div class="testimonial-image">
-            <img src="images/testimonial-1.jpg" alt="Photo témoignage 1">
-          </div>
-
-          <!-- Témoignage 2 -->
-          <div class="testimonial-text">
-            <p>“Travailleur·se et curieuse, Amina a apporté des solutions efficaces à nos challenges analytiques. Une vraie force pour la visualisation des données.”</p>
-            <a class="btn-primary" href="#testimonial-2">Voir le témoignage complet</a>
-          </div>
-          <div class="testimonial-image">
-            <img src="images/testimonial-2.jpg" alt="Photo témoignage 2">
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- MODALS pour témoignages -->
-    <dialog class="proj-modal" id="testimonial-1">
-      <button class="modal-close" data-close>&times;</button>
-      <div class="modal-body">
-        <h4>Témoignage complet — Collègue A</h4>
-        <p>“Amina a collaboré avec nous sur plusieurs projets Power BI et Dataviz. Elle a toujours livré des tableaux de bord précis et adaptés aux besoins des utilisateurs. Sa capacité à analyser et restituer les données est remarquable.”</p>
-      </div>
-    </dialog>
-
-    <dialog class="proj-modal" id="testimonial-2">
-      <button class="modal-close" data-close>&times;</button>
-      <div class="modal-body">
-        <h4>Témoignage complet — Encadrant B</h4>
-        <p>“Amina a fait preuve d’une grande autonomie et créativité lors de son stage. Les dashboards et rapports qu’elle a produits ont été immédiatement exploitables et appréciés par toute l’équipe.”</p>
-      </div>
-    </dialog>
-
     <!-- CONTACT -->
     <section id="contact" class="section alt">
       <div class="container">
@@ -340,6 +289,49 @@
       <p>© <span id="year"></span> Amina Attaf — Portfolio</p>
     </div>
   </footer>
+
+  <!-- DIALOGUES MODALS -->
+  <!-- Exemples pour tous les projets (répéter et adapter les contenus) -->
+  <dialog class="proj-modal" id="proj-portefeuille">
+    <button class="modal-close" data-close>&times;</button>
+    <div class="modal-body">
+      <h4>Suivi du portefeuille jeune</h4>
+      <p>Tableau de bord détaillé pour suivre les parcours et indicateurs des jeunes accompagnés.</p>
+      <div class="modal-gallery">
+        <img src="images/proj-portefeuille-1.png" alt="">
+        <img src="images/proj-portefeuille-2.png" alt="">
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="proj-modal" id="proj-flux">
+    <button class="modal-close" data-close>&times;</button>
+    <div class="modal-body">
+      <h4>Flux de données Power BI</h4>
+      <p>Mise en place et automatisation des flux d'alimentation et transformations.</p>
+      <div class="modal-gallery">
+        <img src="images/proj-flux-1.png" alt="">
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="proj-modal" id="proj-suivi-activite">
+    <button class="modal-close" data-close>&times;</button>
+    <div class="modal-body">
+      <h4>Suivi d'activité</h4>
+      <p>Dashboards pour le suivi opérationnel des activités et indicateurs.</p>
+    </div>
+  </dialog>
+
+  <dialog class="proj-modal" id="proj-reseau">
+    <button class="modal-close" data-close>&times;</button>
+    <div class="modal-body">
+      <h4>Participation du réseau</h4>
+      <p>Outils d’analyse et de mesure de la participation des acteurs du réseau.</p>
+    </div>
+  </dialog>
+
+  <!-- Tu répètes la même structure pour chaque projet (proj-deneb, proj-video, proj-notion-db, etc.) -->
 
   <script src="script.js"></script>
 </body>
