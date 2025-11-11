@@ -225,7 +225,7 @@ h3{
 }
 
 /* LinkedIn image */
-.linkedin-img {
+.testimonial-image {
   max-width: 90%;
   height: auto;
   display: block;
@@ -326,4 +326,5 @@ dialog.proj-modal::backdrop{
 
 /* small UX */
 a{transition:all .18s ease}
+
 
