@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Amina Attaf — Portfolio</title>
+  <meta name="description" content="Portfolio d'Amina Attaf — Data Analyst / BUT Sciences des Données.">
   <link rel="stylesheet" href="style.css">
-  <meta name="description" content="Portfolio d'Amina Attaf — Data Analyst / BUT Sciences des Données. Projets : NBA, DataViz, Consommation énergétique, Classification automatique, Reporting, Enquête.">
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -17,7 +17,6 @@
       </div>
       <nav class="nav">
         <a href="#about">À propos</a>
-        <a href="#skills">Compétences</a>
         <a href="#projects">Projets</a>
         <a href="#contact">Contact</a>
         <a class="btn-outline" href="cv.pdf" target="_blank">CV</a>
@@ -31,7 +30,7 @@
       <div class="container hero-grid">
         <div class="hero-text">
           <h2>Je donne vie aux données à travers des tableaux de bord intuitifs et des analyses qui font sens.<br><span>Data • Visualisation • BI</span></h2>
-          <p>Étudiante en première année de cycle ingénieur en informatique à CY Tech, diplômée d’un BUT en Sciences des Données, je me spécialise en datavisualisation et en conception d’outils décisionnels. J'ai réalisé des projets universitaires sur la collecte, le traitement, l'analyse et la valorisation des données, ainsi que des travaux en entreprise (stage & alternance).</p>
+          <p>Étudiante en première année de cycle ingénieur en informatique à CY Tech, diplômée d’un BUT en Sciences des Données, je me spécialise en datavisualisation et conception d’outils décisionnels. J'ai réalisé de nombreux projets académiques et professionnels portant sur la collecte, le traitement, l'analyse et la restitution des données.</p>
           <div class="hero-ctas">
             <a class="btn-primary" href="#projects">Voir mes projets</a>
             <a class="btn-ghost" href="https://www.linkedin.com/in/amina-attaf" target="_blank">LinkedIn</a>
@@ -47,106 +46,246 @@
     <section id="about" class="section">
       <div class="container">
         <h3>À propos</h3>
-        <p>Étudiante en première année de cycle ingénieur en informatique à CY Tech et diplômée d’un BUT en Sciences des Données, je poursuis une spécialisation en datavisualisation et outils décisionnels. J’ai effectué un stage en tant que Data Analyst à la Direction des Systèmes d’Information des Missions Locales (Tarbes) et j’ai ensuite poursuivi en alternance au sein de la même direction en tant qu’Experte décisionnelle. Mes missions ont porté sur l’automatisation et l’optimisation de tableaux de bord Power BI, la gestion des besoins utilisateurs, la création d’une base de données Notion, et la collaboration inter-équipes pour la mise en production d’outils décisionnels.</p>
+        <p>Étudiante en première année de cycle ingénieur en informatique à CY Tech et diplômée d’un BUT en Sciences des Données, j’ai acquis des compétences en analyse, modélisation et restitution de données via des projets universitaires (SAE, challenges) et des expériences en entreprise (stage et alternance). Mes missions ont couvert la conception et l’automatisation de tableaux de bord Power BI, la création de bases de données et l’accompagnement utilisateur pour des outils décisionnels.</p>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section alt">
-      <div class="container">
-        <h3>Compétences</h3>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h4>Langages</h4>
-            <ul>
-              <li>Python • SQL • VBA • Shell • R</li>
-              <li>HTML / CSS / JavaScript • PHP • C • Introduction à SAS</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <h4>Outils & Business Intelligence</h4>
-            <ul>
-              <li>Power BI • Qlik Sense / QlikView • Tableau</li>
-              <li>Talend • Open Office • Access • Excel • Notion</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <h4>Soft Skills & Langues</h4>
-            <ul>
-              <li>Esprit d’équipe • Rigueur • Autonomie • Écoute</li>
-              <li>Organisation • Curiosité • Adaptation</li>
-              <li>Français : courant • Arabe : courant • Anglais : A2–B1</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <h4>Centres d’intérêt</h4>
-            <ul>
-              <li>Course à pied</li>
-              <li>Psychologie</li>
-              <li>Design</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
+    <!-- PROJECTS: main container -->
     <section id="projects" class="section">
       <div class="container">
         <h3>Projets</h3>
-        <p class="muted">Cliquez sur une carte pour voir les détails — images, description complète, leçons tirées et technologies utilisées.</p>
+        <p class="muted">Page unique — déroulez pour parcourir toutes les catégories. Cliquez sur une fiche pour ouvrir le détail complet du projet.</p>
 
-        <div class="projects-grid">
-          <article class="proj-card" data-projid="proj-nba">
-            <div class="proj-thumb"><img src="images/proj-nba.png" alt="Projet NBA"></div>
-            <div class="proj-info">
-              <h4>Projet statistique — NBA</h4>
-              <p>Analyse statistique sur des données de la NBA (SAE).</p>
-            </div>
-          </article>
+        <!-- Category 1 -->
+        <div class="category">
+          <h4 class="category-title">Catégorie 1 — Projets académiques</h4>
 
-          <article class="proj-card" data-projid="proj-dataviz">
-            <div class="proj-thumb"><img src="images/proj-dataviz.png" alt="Challenge Dataviz"></div>
-            <div class="proj-info">
-              <h4>Challenge DataViz — SNCF</h4>
-              <p>Challenge Dataviz (SNCF) — conception d’un tableau de bord en une journée.</p>
-            </div>
-          </article>
+          <!-- 1.1 Traiter -->
+          <div class="subsection">
+            <h5>1.1 Traiter (Collecte & préparation)</h5>
+            <div class="projects-grid">
 
-          <article class="proj-card" data-projid="proj-energie">
-            <div class="proj-thumb"><img src="images/proj-energie.png" alt="Consommation énergétique"></div>
-            <div class="proj-info">
-              <h4>Consommation énergétique — Projet annuel</h4>
-              <p>Étude et création de tableaux de bord pour la consommation énergétique (deux commanditaires).</p>
-            </div>
-          </article>
+              <!-- Data visualisation group: Reporting -->
+              <article class="proj-card" data-projid="proj-reporting">
+                <div class="proj-thumb"><img src="images/proj-reporting.png" alt="Reporting"></div>
+                <div class="proj-info">
+                  <h4>Reporting (SAE) — 1ʳᵉ année</h4>
+                  <p>Extraction, interrogation et restitution de données via SQL et tableau de bord.</p>
+                </div>
+              </article>
 
-          <article class="proj-card" data-projid="proj-classif">
-            <div class="proj-thumb"><img src="images/proj-classif.png" alt="Classification automatique"></div>
-            <div class="proj-info">
-              <h4>Classification automatique (INSEE)</h4>
-              <p>Classification automatique (CAH) sur données INSEE, analyse multivariée sous R.</p>
-            </div>
-          </article>
+              <!-- QlikView -->
+              <article class="proj-card" data-projid="proj-qlikview">
+                <div class="proj-thumb"><img src="images/proj-qlikview.png" alt="QlikView"></div>
+                <div class="proj-info">
+                  <h4>QlikView — 1ʳᵉ année</h4>
+                  <p>Initiation à QlikView pour construire des visualisations interactives et des dashboards.</p>
+                </div>
+              </article>
 
-          <article class="proj-card" data-projid="proj-reporting">
-            <div class="proj-thumb"><img src="images/proj-reporting.png" alt="Reporting"></div>
-            <div class="proj-info">
-              <h4>SAE Reporting</h4>
-              <p>Requêtes SQL, extraction, et création d’un tableau de bord.</p>
-            </div>
-          </article>
+              <!-- Power BI (1st year) -->
+              <article class="proj-card" data-projid="proj-powerbi1">
+                <div class="proj-thumb"><img src="images/proj-powerbi1.png" alt="Power BI 1ere année"></div>
+                <div class="proj-info">
+                  <h4>Power BI — 1ʳᵉ année</h4>
+                  <p>Création de tableaux de bord pour cas concrets et apprentissage du cycle ETL→visualisation.</p>
+                </div>
+              </article>
 
-          <article class="proj-card" data-projid="proj-enquete">
-            <div class="proj-thumb"><img src="images/proj-enquete.png" alt="Enquête"></div>
-            <div class="proj-info">
-              <h4>Mise en œuvre d'une enquête (Sphinx)</h4>
-              <p>Conception et administration d’un questionnaire, collecte terrain et analyse.</p>
+              <!-- Challenge Dataviz -->
+              <article class="proj-card" data-projid="proj-dataviz">
+                <div class="proj-thumb"><img src="images/proj-dataviz.png" alt="Challenge Dataviz"></div>
+                <div class="proj-info">
+                  <h4>Challenge DataViz — SNCF (1 jour)</h4>
+                  <p>Challenge d'une journée : problématique, extraction et dashboard Power BI en temps limité.</p>
+                </div>
+              </article>
+
+              <!-- Projet consommation énergétique -->
+              <article class="proj-card" data-projid="proj-energie">
+                <div class="proj-thumb"><img src="images/proj-energie.png" alt="Consommation énergétique"></div>
+                <div class="proj-info">
+                  <h4>Projet — Consommation énergétique (2ᵉ année, 1 an)</h4>
+                  <p>Modélisation et dashboards pour deux commanditaires (maison & entreprise).</p>
+                </div>
+              </article>
+
+              <!-- SID / BDR -->
+              <article class="proj-card" data-projid="proj-sidbdr">
+                <div class="proj-thumb"><img src="images/proj-sidbdr.png" alt="SID / BDR"></div>
+                <div class="proj-info">
+                  <h4>SID / BDR — 2ᵉ année</h4>
+                  <p>Étude des systèmes d'information décisionnels : MCD / MLD et modélisation des entrepôts.</p>
+                </div>
+              </article>
+
+              <!-- VBA -->
+              <article class="proj-card" data-projid="proj-vba">
+                <div class="proj-thumb"><img src="images/proj-vba.png" alt="VBA"></div>
+                <div class="proj-info">
+                  <h4>VBA — 2ᵉ année</h4>
+                  <p>Automatisation et développement d'applications simples sous Excel (procédures, formulaires).</p>
+                </div>
+              </article>
             </div>
-          </article>
-        </div>
-      </div>
-    </section>
+          </div> <!-- end 1.1 -->
+
+          <!-- 1.2 Analyser -->
+          <div class="subsection">
+            <h5>1.2 Analyser (Exploration & statistique)</h5>
+            <div class="projects-grid">
+              <!-- Classification automatique -->
+              <article class="proj-card" data-projid="proj-classif">
+                <div class="proj-thumb"><img src="images/proj-classif.png" alt="Classification automatique"></div>
+                <div class="proj-info">
+                  <h4>Classification automatique (INSEE) — 2ᵉ année</h4>
+                  <p>CAH pour classifier des individus selon variables régionales, rapport et visualisations sous R.</p>
+                </div>
+              </article>
+
+              <!-- Projet NBA -->
+              <article class="proj-card" data-projid="proj-nba">
+                <div class="proj-thumb"><img src="images/proj-nba.png" alt="Projet NBA"></div>
+                <div class="proj-info">
+                  <h4>Projet statistique — NBA (1ʳᵉ année)</h4>
+                  <p>Exploration et analyses univariées sous Excel, synthèses et graphiques pour un rapport pédagogique.</p>
+                </div>
+              </article>
+            </div>
+          </div> <!-- end 1.2 -->
+
+          <!-- 1.3 Valoriser -->
+          <div class="subsection">
+            <h5>1.3 Valoriser (Restitution & communication)</h5>
+            <div class="projects-grid">
+              <!-- Enquête -->
+              <article class="proj-card" data-projid="proj-enquete">
+                <div class="proj-thumb"><img src="images/proj-enquete.png" alt="Enquête"></div>
+                <div class="proj-info">
+                  <h4>Mise en œuvre d'une enquête (SAE) — 1ʳᵉ année</h4>
+                  <p>Rédaction du questionnaire (Sphinx), administration, saisie, nettoyage et restitution des résultats.</p>
+                </div>
+              </article>
+
+              <!-- Projet consommation (répété pour valoriser) -->
+              <article class="proj-card" data-projid="proj-energie">
+                <div class="proj-thumb"><img src="images/proj-energie.png" alt="Consommation énergétique"></div>
+                <div class="proj-info">
+                  <h4>Projet — Consommation énergétique (2ᵉ année)</h4>
+                  <p>Restitution via dashboards adaptés aux commanditaires et rapport final détaillé.</p>
+                </div>
+              </article>
+            </div>
+          </div> <!-- end 1.3 -->
+
+          <!-- 1.4 Développer -->
+          <div class="subsection">
+            <h5>1.4 Développer (Programmation & collecte)</h5>
+            <div class="projects-grid">
+              <!-- POO -->
+              <article class="proj-card" data-projid="proj-poo">
+                <div class="proj-thumb"><img src="images/proj-poo.png" alt="Programmation orientée objet"></div>
+                <div class="proj-info">
+                  <h4>Programmation orientée objet — 2ᵉ année</h4>
+                  <p>Approche POO appliquée en Python et VBA pour structurer des programmes réutilisables.</p>
+                </div>
+              </article>
+
+              <!-- Collecte automatisée -->
+              <article class="proj-card" data-projid="proj-scraping">
+                <div class="proj-thumb"><img src="images/proj-scraping.png" alt="Collecte automatisée"></div>
+                <div class="proj-info">
+                  <h4>Collecte automatisée de données web — 2ᵉ année</h4>
+                  <p>Web scraping et utilisation d'APIs pour automatiser la collecte et l'enrichissement de bases.</p>
+                </div>
+              </article>
+            </div>
+          </div> <!-- end 1.4 -->
+        </div> <!-- end Category 1 -->
+
+        <!-- Category 2 -->
+        <div class="category">
+          <h4 class="category-title">Catégorie 2 — Projets professionnels (stage & alternance)</h4>
+
+          <!-- 2.1 Tableaux de bord Power BI -->
+          <div class="subsection">
+            <h5>2.1 Tableaux de bord Power BI</h5>
+            <div class="projects-grid">
+              <article class="proj-card" data-projid="proj-portefeuille">
+                <div class="proj-thumb"><img src="images/proj-portefeuille.png" alt="Suivi portefeuille jeune"></div>
+                <div class="proj-info">
+                  <h4>Suivi du portefeuille jeune</h4>
+                  <p>Tableau de bord pour suivre les parcours et indicateurs de jeunes accompagnés (KPI, filtres, tendances).</p>
+                </div>
+              </article>
+
+              <article class="proj-card" data-projid="proj-flux">
+                <div class="proj-thumb"><img src="images/proj-flux.png" alt="Flux de données"></div>
+                <div class="proj-info">
+                  <h4>Flux de données Power BI</h4>
+                  <p>Mise en place et automatisation des flux (actualisation, transformation, gestion des sources).</p>
+                </div>
+              </article>
+
+              <article class="proj-card" data-projid="proj-suivi-activite">
+                <div class="proj-thumb"><img src="images/proj-suivi.png" alt="Suivi activité"></div>
+                <div class="proj-info">
+                  <h4>Suivi d'activité</h4>
+                  <p>Dashboards pour le suivi opérationnel des activités (indicateurs temps réel et rapports périodiques).</p>
+                </div>
+              </article>
+
+              <article class="proj-card" data-projid="proj-reseau">
+                <div class="proj-thumb"><img src="images/proj-reseau.png" alt="Participation du réseau"></div>
+                <div class="proj-info">
+                  <h4>Participation au réseau</h4>
+                  <p>Outils de pilotage et d'analyse pour mesurer la participation et l'impact du réseau.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- 2.2 Outils & supports -->
+          <div class="subsection">
+            <h5>2.2 Outils & supports internes</h5>
+            <div class="projects-grid">
+              <article class="proj-card" data-projid="proj-deneb">
+                <div class="proj-thumb"><img src="images/proj-deneb.png" alt="Deneb visuals"></div>
+                <div class="proj-info">
+                  <h4>Création de visuels avec Deneb</h4>
+                  <p>Développement de visuels personnalisés avec Deneb pour des rapports Power BI plus expressifs.</p>
+                </div>
+              </article>
+
+              <article class="proj-card" data-projid="proj-video">
+                <div class="proj-thumb"><img src="images/proj-video.png" alt="Tutoriel vidéo"></div>
+                <div class="proj-info">
+                  <h4>Vidéo tutoriel explicative d'outil</h4>
+                  <p>Réalisation de vidéos explicatives pour former les collègues à l'utilisation d'outils et bonnes pratiques.</p>
+                </div>
+              </article>
+
+              <article class="proj-card" data-projid="proj-notion-db">
+                <div class="proj-thumb"><img src="images/proj-notion.png" alt="Notion DB"></div>
+                <div class="proj-info">
+                  <h4>Création d'une base de données sur Notion</h4>
+                  <p>Conception et structuration d'une base Notion partagée pour centraliser documents et processus.</p>
+                </div>
+              </article>
+
+              <article class="proj-card" data-projid="proj-notion-fiches">
+                <div class="proj-thumb"><img src="images/proj-fiches.png" alt="Fiches Notion"></div>
+                <div class="proj-info">
+                  <h4>Fiches Notion à disposition des collègues</h4>
+                  <p>Fiches pratiques (ex. : bonnes pratiques Power BI, automatisation) destinées à partager le savoir-faire.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div> <!-- end Category 2 -->
+
+      </div> <!-- end container -->
+    </section> <!-- end projects -->
 
     <!-- CONTACT -->
     <section id="contact" class="section alt">
@@ -160,6 +299,7 @@
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
@@ -168,146 +308,265 @@
     </div>
   </footer>
 
-  <!-- MODALS - contenus développés (texte repris du Portfolio PDF) -->
+  <!-- MODALES : contenu détaillé pour chaque projet -->
   <div id="modals-root">
 
-    <!-- PROJ: NBA (complete content) -->
-    <dialog class="proj-modal" id="proj-nba">
-      <button class="modal-close" data-close>&times;</button>
-      <div class="modal-body">
-        <h4>Projet statistique — données NBA</h4>
-
-        <p><strong>Contexte :</strong> Projet réalisé dans le cadre d’une SAE de première année portant sur les statistiques. Le projet a consisté en l’analyse d’une base de données de la NBA fournie au groupe. Nous étions un groupe de trois étudiants et la taille de la base a nécessité un partage de tâches et une coordination étroite pour l’exploration et le traitement des données.</p>
-
-        <p><strong>Méthodologie :</strong> Utilisation d’Excel pour l’exploration initiale des données, analyses univariées et calculs statistiques descriptifs. Production de synthèses numériques et graphiques pour mettre en évidence les caractéristiques principales des variables étudiées.</p>
-
-        <p><strong>Résultats & livrables :</strong> Rapport d’analyse, graphiques récapitulatifs, et page de garde du rapport. Le travail a permis d’identifier des tendances et de produire des visualisations claires favorisant la compréhension des résultats.</p>
-
-        <p><strong>Leçons tirées :</strong> Première expérience d’analyse de données réelles : apprentissage de la synthèse des informations issues d’analyses univariées, découverte du cycle complet d’un petit projet statistique (exploration, synthèse, restitution).</p>
-
-        <div class="modal-gallery">
-          <img src="images/proj-nba.png" alt="Extrait projet NBA">
-          <!-- ajoute d'autres images réelles de ton rapport ici -->
-        </div>
-
-        <p><strong>Technologies :</strong> Excel, analyses statistiques, reporting.</p>
-      </div>
-    </dialog>
-
-    <!-- PROJ: DataViz SNCF (complete content) -->
-    <dialog class="proj-modal" id="proj-dataviz">
-      <button class="modal-close" data-close>&times;</button>
-      <div class="modal-body">
-        <h4>Challenge DataViz — SNCF</h4>
-
-        <p><strong>Contexte :</strong> Challenge Dataviz réalisé en 2023 sur les données de la SNCF. L’objectif était de définir une problématique adaptée au jeu de données fourni et de concevoir en une journée un tableau de bord pertinent répondant à cette problématique.</p>
-
-        <p><strong>Méthodologie :</strong> Traitement et nettoyage rapides des données fournies (format Excel), sélection des indicateurs pertinents, conception et réalisation d’un tableau de bord sur Power BI. Travail en équipe, prise de décisions rapides sur la visualisation et l’ergonomie du dashboard.</p>
-
-        <p><strong>Résultats & livrables :</strong> Deux tableaux de bord Power BI réalisés pendant le challenge, présentation orale et restitution dans le temps imparti. Ces livrables ont mis en valeur des KPIs pertinents et des filtres interactifs permettant d’explorer les jeux de données.</p>
-
-        <p><strong>Leçons tirées :</strong> Renforcement des compétences en datavisualisation et en travail sous contrainte temporelle ; importance de la communication au sein de l’équipe pour synchroniser les choix méthodologiques et esthétiques.</p>
-
-        <div class="modal-gallery">
-          <img src="images/proj-dataviz.png" alt="Extrait Challenge Dataviz">
-        </div>
-
-        <p><strong>Technologies :</strong> Power BI, Excel.</p>
-      </div>
-    </dialog>
-
-    <!-- PROJ: Consommation énergétique (complete content) -->
-    <dialog class="proj-modal" id="proj-energie">
-      <button class="modal-close" data-close>&times;</button>
-      <div class="modal-body">
-        <h4>Projet — Consommation énergétique (SID / BDR)</h4>
-
-        <p><strong>Contexte :</strong> Projet de deuxième année mené sur l’ensemble de l’année, visant à étudier la consommation énergétique pour deux commanditaires : la maison d’un commanditaire privé et les bâtiments d’une entreprise. Le projet a nécessité la modélisation de données, la compréhension des indicateurs énergétiques (DPE, DJU) et la restitution via tableaux de bord.</p>
-
-        <p><strong>Méthodologie :</strong> Étude des sources de données, conception de MCD/MLD (modèles conceptuel et logique de données), préparation et traitement des jeux de données, calcul d’indicateurs (DPE, DJU), et construction de rapports et dashboards sur Power BI adaptés aux attentes de chaque commanditaire.</p>
-
-        <p><strong>Résultats & livrables :</strong> Rapport final détaillé (méthodologie, choix des indicateurs, visualisations), plusieurs dashboards Power BI adaptés aux deux commanditaires, et une soutenance orale expliquant la démarche et les résultats.</p>
-
-        <p><strong>Difficultés rencontrées :</strong> Hétérogénéité des attentes entre les deux commanditaires, nécessité d’apprendre des notions techniques spécifiques au domaine (DPE, DJU), et gestion de la perte d’un membre de l’équipe en cours d’année entraînant une répartition dynamique des tâches.</p>
-
-        <p><strong>Leçons tirées :</strong> Importance de contextualiser les données, d’expliciter les choix méthodologiques lors de la restitution, et nécessité de communiquer clairement avec les commanditaires pour aligner les livrables sur leurs besoins.</p>
-
-        <div class="modal-gallery">
-          <img src="images/proj-energie.png" alt="Extrait consommation énergétique">
-        </div>
-
-        <p><strong>Technologies :</strong> Power BI, SQL, modélisation de données (MLD/MCD).</p>
-      </div>
-    </dialog>
-
-    <!-- PROJ: Classification automatique (complete content) -->
-    <dialog class="proj-modal" id="proj-classif">
-      <button class="modal-close" data-close>&times;</button>
-      <div class="modal-body">
-        <h4>Classification automatique — INSEE</h4>
-
-        <p><strong>Contexte :</strong> Projet sur des données de l’INSEE (chaque groupe avait une région à étudier). L’objectif était de concevoir et appliquer une méthode de classification automatique adaptée aux données (CAH retenue).</p>
-
-        <p><strong>Méthodologie :</strong> Préparation et nettoyage des données (traitement des valeurs manquantes, sélection des variables pertinentes), application d’algorithmes de classification (CAH — Classification Ascendante Hiérarchique), analyse et interprétation des classes obtenues, et rédaction d’un rapport détaillé présentant la méthodologie et les résultats.</p>
-
-        <p><strong>Résultats & livrables :</strong> Rapport d’analyse complet, graphiques et synthèses des classes identifiées, et réflexion sur la pertinence des variables retenues.</p>
-
-        <p><strong>Leçons tirées :</strong> Apprentissage de la gestion de fichiers lourds sous R, nécessité d’adapter les méthodes aux contraintes de calcul, et importance des synthèses graphiques pour rendre compte des résultats multivariés.</p>
-
-        <div class="modal-gallery">
-          <img src="images/proj-classif.png" alt="Extrait classification automatique">
-        </div>
-
-        <p><strong>Technologies :</strong> R, analyses statistiques multivariées.</p>
-      </div>
-    </dialog>
-
-    <!-- PROJ: SAE Reporting (complete content) -->
+    <!-- Reporting (SAE) -->
     <dialog class="proj-modal" id="proj-reporting">
       <button class="modal-close" data-close>&times;</button>
       <div class="modal-body">
         <h4>SAE — Reporting</h4>
-
-        <p><strong>Contexte :</strong> SAE de première année axée sur le reporting. Le groupe (trois personnes) devait interroger une base de données et répondre à des questions métiers via des requêtes SQL, puis restituer les résultats sous la forme d’un tableau de bord.</p>
-
-        <p><strong>Méthodologie :</strong> Conception et exécution de requêtes SQL pour extraire les données utiles, consolidation des résultats, et création d’un dashboard mettant en valeur les indicateurs les plus pertinents. Travail en interaction avec le professeur (commanditaire pédagogique) afin de clarifier les attentes et critères d’évaluation.</p>
-
-        <p><strong>Résultats & livrables :</strong> Tableau de bord opérationnel, rapport de méthodologie et d’analyse, et présentation de restitution. Ce projet a permis d’expérimenter l’intégralité du flux ETL simple → reporting.</p>
-
-        <p><strong>Leçons tirées :</strong> Comprendre la relation client/commanditaire, l’importance des itérations pour affiner les livrables, et la nécessité d’un bon cadrage des métriques à restituer.</p>
-
-        <div class="modal-gallery">
-          <img src="images/proj-reporting.png" alt="Extrait SAE Reporting">
-        </div>
-
-        <p><strong>Technologies :</strong> SQL, Power BI / Qlik (pour restitution).</p>
+        <p><strong>Contexte :</strong> Projet de première année en groupe (3 personnes) visant à interroger une base de données pour répondre à des questions métiers et produire un tableau de bord.</p>
+        <p><strong>Méthodologie :</strong> Requêtes SQL pour extraire les données, consolidation et création d'indicateurs, conception d'un dashboard pour mettre en valeur les mesures clés. Interaction avec le commanditaire pédagogique pour clarifier les attentes.</p>
+        <p><strong>Résultats :</strong> Tableau de bord opérationnel, rapport méthodologique et soutenance.</p>
+        <p><strong>Leçons tirées :</strong> Importance du cadrage, des itérations avec le commanditaire et de la définition précise des indicateurs.</p>
+        <div class="modal-gallery"><img src="images/proj-reporting.png" alt=""></div>
+        <p><strong>Technos :</strong> SQL, Power BI / Qlik.</p>
       </div>
     </dialog>
 
-    <!-- PROJ: Enquête (complete content) -->
+    <!-- QlikView -->
+    <dialog class="proj-modal" id="proj-qlikview">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>QlikView — Datavisualisation</h4>
+        <p><strong>Contexte :</strong> Découverte et utilisation de QlikView dans un cadre pédagogique pour créer des tableaux de bord dynamiques et interactifs.</p>
+        <p><strong>Méthodologie :</strong> Construction d'applications QlikView, agrégation et filtrage des données, création de graphiques et de dashboards pour répondre à des besoins précis.</p>
+        <p><strong>Leçons tirées :</strong> Apprentissage des bonnes pratiques en datavisualisation et des contraintes d'ergonomie pour l'utilisateur final.</p>
+        <div class="modal-gallery"><img src="images/proj-qlikview.png" alt=""></div>
+        <p><strong>Technos :</strong> QlikView.</p>
+      </div>
+    </dialog>
+
+    <!-- Power BI 1ere annee -->
+    <dialog class="proj-modal" id="proj-powerbi1">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Power BI — Projets (1ʳᵉ année)</h4>
+        <p><strong>Contexte :</strong> Mise en pratique des compétences Power BI sur des cas concrets en 1ʳᵉ année : extraction, modélisation simple et création de visuels interactifs.</p>
+        <p><strong>Méthodologie :</strong> Structuration des données, création de mesures DAX basiques, construction de pages de rapport claires avec filtres et slicers.</p>
+        <p><strong>Leçons tirées :</strong> Comprendre l'importance de la modélisation pour la robustesse des rapports et l'expérience utilisateur.</p>
+        <div class="modal-gallery"><img src="images/proj-powerbi1.png" alt=""></div>
+        <p><strong>Technos :</strong> Power BI.</p>
+      </div>
+    </dialog>
+
+    <!-- Challenge DataViz -->
+    <dialog class="proj-modal" id="proj-dataviz">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Challenge DataViz — SNCF</h4>
+        <p><strong>Contexte :</strong> Challenge d'une journée pour concevoir un tableau de bord à partir d'un fichier fourni par la SNCF.</p>
+        <p><strong>Méthodologie :</strong> Traitement rapide des données, sélection des KPI, construction d’un dashboard Power BI pertinent pour la problématique choisie.</p>
+        <p><strong>Résultats :</strong> Deux dashboards créés pendant le challenge, restitution orale et apprentissage du travail sous contrainte.</p>
+        <p><strong>Leçons tirées :</strong> Communication d'équipe, priorisation des visuels et capacité à faire parler des données en peu de temps.</p>
+        <div class="modal-gallery"><img src="images/proj-dataviz.png" alt=""></div>
+        <p><strong>Technos :</strong> Power BI, Excel.</p>
+      </div>
+    </dialog>
+
+    <!-- Consommation énergétique -->
+    <dialog class="proj-modal" id="proj-energie">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Projet — Consommation énergétique (SID / BDR)</h4>
+        <p><strong>Contexte :</strong> Projet annuel (2ᵉ année) : deux commanditaires (consommation de la maison d’un commanditaire et consommation des bâtiments d'une entreprise). Travail de modélisation, calcul d'indicateurs et construction de dashboards.</p>
+        <p><strong>Méthodologie :</strong> Conception des MCD/MLD, préparation et nettoyage des données, calculs (DPE, DJU), modélisation pour la restitution en Power BI.</p>
+        <p><strong>Difficultés :</strong> Hétérogénéité des attentes commanditaires, apprentissage de notions techniques (DPE, DJU) et gestion d'une équipe qui a perdu un membre en cours d'année.</p>
+        <p><strong>Leçons tirées :</strong> Importance de contextualiser les données, expliquer la démarche aux commanditaires et ajuster les livrables à leurs besoins.</p>
+        <div class="modal-gallery"><img src="images/proj-energie.png" alt=""></div>
+        <p><strong>Technos :</strong> Power BI, SQL, modélisation de données.</p>
+      </div>
+    </dialog>
+
+    <!-- SID / BDR -->
+    <dialog class="proj-modal" id="proj-sidbdr">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>SID / BDR — Systèmes d'information décisionnels</h4>
+        <p><strong>Contexte :</strong> Études sur la structuration des bases de données décisionnelles : MCD, MLD, entrepôts de données et logiques d'intégration.</p>
+        <p><strong>Méthodologie :</strong> Conception des modèles conceptuels et logique, réflexion sur l'architecture de l'entrepôt et sur l'intégration de sources hétérogènes.</p>
+        <p><strong>Leçons tirées :</strong> Rôle central de l'entrepôt dans la chaîne décisionnelle et importance des tests, de la documentation et des choix d'intégration.</p>
+        <div class="modal-gallery"><img src="images/proj-sidbdr.png" alt=""></div>
+        <p><strong>Technos :</strong> SQL, modélisation (MLD/MCD).</p>
+      </div>
+    </dialog>
+
+    <!-- VBA -->
+    <dialog class="proj-modal" id="proj-vba">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>VBA — Automatisation Excel</h4>
+        <p><strong>Contexte :</strong> Mise en pratique de VBA : automatisation de tâches, création de procédures et d'interfaces pour faciliter des processus répétitifs.</p>
+        <p><strong>Méthodologie :</strong> Développement de macros et petites applications, test et documentation des procédures.</p>
+        <p><strong>Leçons tirées :</strong> Intérêt de la programmation pour automatiser des étapes manuelles et amélioration de la productivité.</p>
+        <div class="modal-gallery"><img src="images/proj-vba.png" alt=""></div>
+        <p><strong>Technos :</strong> VBA, Excel.</p>
+      </div>
+    </dialog>
+
+    <!-- Classification automatique -->
+    <dialog class="proj-modal" id="proj-classif">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Classification automatique — INSEE</h4>
+        <p><strong>Contexte :</strong> Projet d'analyse de données INSEE pour une région donnée. Objectif : mettre en place une classification automatique adaptée (CAH retenue).</p>
+        <p><strong>Méthodologie :</strong> Préparation des données, sélection des variables quantitatives, application de la CAH, interprétation des classes et rédaction d'un rapport.</p>
+        <p><strong>Leçons tirées :</strong> Gestion de fichiers lourds sous R, importance du prétraitement et de la synthèse graphique pour rendre compte des résultats multivariés.</p>
+        <div class="modal-gallery"><img src="images/proj-classif.png" alt=""></div>
+        <p><strong>Technos :</strong> R, statistiques multivariées.</p>
+      </div>
+    </dialog>
+
+    <!-- Projet NBA -->
+    <dialog class="proj-modal" id="proj-nba">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Projet statistique — données NBA</h4>
+        <p><strong>Contexte :</strong> Projet pédagogique en première année : analyser une base de données NBA en groupe et produire des synthèses exploratoires.</p>
+        <p><strong>Méthodologie :</strong> Exploration univariée sous Excel, calculs statistiques descriptifs, production de graphiques et synthèses pour un rapport.</p>
+        <p><strong>Leçons tirées :</strong> Première expérience d'analyse réelle : synthétiser l'information et apprendre le cycle analyse → restitution.</p>
+        <div class="modal-gallery"><img src="images/proj-nba.png" alt=""></div>
+        <p><strong>Technos :</strong> Excel, statistiques descriptives.</p>
+      </div>
+    </dialog>
+
+    <!-- Enquête -->
     <dialog class="proj-modal" id="proj-enquete">
       <button class="modal-close" data-close>&times;</button>
       <div class="modal-body">
-        <h4>Mise en œuvre d'une enquête (SAE Enquête)</h4>
-
-        <p><strong>Contexte :</strong> Projet d’enquête (groupe de 7) visant à comprendre l’utilisation d’Internet par les lycéens. Le projet couvrait la conception du questionnaire (Sphinx), la collecte sur le terrain, la saisie et l’analyse des données, puis la soutenance des résultats.</p>
-
-        <p><strong>Méthodologie :</strong> Rédaction du questionnaire en tenant compte des biais potentiels, administration du questionnaire dans les lycées ciblés, saisie des réponses dans Sphinx, nettoyage des données et analyses statistiques descriptives et graphiques pour mettre en évidence les résultats clés.</p>
-
-        <p><strong>Résultats & livrables :</strong> Rapport d’enquête, questionnaire (annexe), analyses et graphiques, et soutenance orale. Le projet a mis en avant des résultats clés sur les usages et a permis d’identifier des biais méthodologiques à corriger lors d’enquêtes similaires.</p>
-
-        <p><strong>Leçons tirées :</strong> Apprentissage du travail en grand groupe (répartition des tâches), importance de la conception des questions pour limiter les biais, et capacité à synthétiser les résultats pour une audience non technique.</p>
-
-        <div class="modal-gallery">
-          <img src="images/proj-enquete.png" alt="Extrait projet Enquête">
-          <!-- si tu as l'annexe/questionnaire, uploade-la et ajoute un lien ci-dessous -->
-        </div>
-
-        <p><strong>Technologies :</strong> Sphinx, Excel, méthodes d’enquête et présentation.</p>
+        <h4>Mise en œuvre d'une enquête (SAE)</h4>
+        <p><strong>Contexte :</strong> Projet de groupe (7 étudiants) sur l'utilisation d'internet par les lycéens : conception du questionnaire, administration, saisie et analyse.</p>
+        <p><strong>Méthodologie :</strong> Rédaction du questionnaire avec prise en compte des biais, administration sur le terrain, saisie dans Sphinx, nettoyage et analyses statistiques.</p>
+        <p><strong>Résultats :</strong> Rapport d’enquête, annexes (questionnaire), présentation et soutenance.</p>
+        <p><strong>Leçons tirées :</strong> Importance de la conception des questions pour limiter les biais, coordination dans un grand groupe et synthèse des résultats pour un public non technique.</p>
+        <div class="modal-gallery"><img src="images/proj-enquete.png" alt=""></div>
+        <p><strong>Technos :</strong> Sphinx, Excel.</p>
       </div>
     </dialog>
 
-  </div>
+    <!-- POO -->
+    <dialog class="proj-modal" id="proj-poo">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Programmation orientée objet</h4>
+        <p><strong>Contexte :</strong> Apprentissage de la POO pour structurer des programmes en Python/VBA et faciliter la maintenance et la réutilisation.</p>
+        <p><strong>Méthodologie :</strong> Conception de classes, méthodes, tests unitaires simples et mise en pratique sur des petits projets.</p>
+        <p><strong>Leçons tirées :</strong> Compréhension des bénéfices de la POO pour modéliser des problèmes réels et organiser des projets.</p>
+        <div class="modal-gallery"><img src="images/proj-poo.png" alt=""></div>
+        <p><strong>Technos :</strong> Python, VBA.</p>
+      </div>
+    </dialog>
+
+    <!-- Scraping / API -->
+    <dialog class="proj-modal" id="proj-scraping">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Collecte automatisée de données web</h4>
+        <p><strong>Contexte :</strong> Cours et TP sur la récupération de données via API et web scraping pour enrichir des bases.</p>
+        <p><strong>Méthodologie :</strong> Utilisation de requêtes API, parsing HTML, automatisation et sauvegarde dans des formats exploitables.</p>
+        <p><strong>Leçons tirées :</strong> Importance d'automatiser la collecte pour maintenir des jeux de données à jour et des traitements robustes.</p>
+        <div class="modal-gallery"><img src="images/proj-scraping.png" alt=""></div>
+        <p><strong>Technos :</strong> Python (requests, BeautifulSoup), APIs.</p>
+      </div>
+    </dialog>
+
+    <!-- Projets pro: portefeuille -->
+    <dialog class="proj-modal" id="proj-portefeuille">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Suivi du portefeuille jeune (Power BI)</h4>
+        <p><strong>Contexte :</strong> Dashboard réalisé en contexte professionnel pour suivre les parcours et indicateurs des jeunes accompagnés (KPIs, filtres temporels, segmentation).</p>
+        <p><strong>Méthodologie :</strong> Modélisation des tables, mesures DAX pour calculs métier, construction d'indicateurs visuels et interactivités pour l'exploration.</p>
+        <p><strong>Leçons tirées :</strong> Nécessité d'une collaboration étroite avec les utilisateurs pour définir des KPIs pertinents et des filtres utiles.</p>
+        <div class="modal-gallery"><img src="images/proj-portefeuille.png" alt=""></div>
+        <p><strong>Technos :</strong> Power BI, SQL.</p>
+      </div>
+    </dialog>
+
+    <!-- Flux de données -->
+    <dialog class="proj-modal" id="proj-flux">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Flux de données Power BI</h4>
+        <p><strong>Contexte :</strong> Mise en place et maintenance des flux d'alimentation des rapports en entreprise (routage, actualisation, sources multiples).</p>
+        <p><strong>Méthodologie :</strong> Automatisation des rafraîchissements, nettoyage en amont et documentation des procédures de mise à jour.</p>
+        <p><strong>Leçons tirées :</strong> Veille et suivi des dépendances techniques pour garantir la fiabilité des tableaux de bord.</p>
+        <div class="modal-gallery"><img src="images/proj-flux.png" alt=""></div>
+        <p><strong>Technos :</strong> Power BI, ETL (Talend / scripts).</p>
+      </div>
+    </dialog>
+
+    <!-- Suivi activité -->
+    <dialog class="proj-modal" id="proj-suivi-activite">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Suivi d'activité</h4>
+        <p><strong>Contexte :</strong> Dashboard pour le suivi opérationnel des activités, production de rapports périodiques et analyses comparatives.</p>
+        <p><strong>Leçons tirées :</strong> Importance de l'automatisation pour la production régulière et de la clarté des visuels pour les décideurs.</p>
+        <div class="modal-gallery"><img src="images/proj-suivi.png" alt=""></div>
+        <p><strong>Technos :</strong> Power BI, Excel.</p>
+      </div>
+    </dialog>
+
+    <!-- Participation reseau -->
+    <dialog class="proj-modal" id="proj-reseau">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Participation au réseau</h4>
+        <p><strong>Contexte :</strong> Indicateurs pour mesurer l'engagement et la participation des acteurs d'un réseau (rapports consolidés).</p>
+        <p><strong>Leçons tirées :</strong> Mise en place d'indicateurs simples et communicables pour favoriser la prise de décision.</p>
+        <div class="modal-gallery"><img src="images/proj-reseau.png" alt=""></div>
+        <p><strong>Technos :</strong> Power BI, SQL.</p>
+      </div>
+    </dialog>
+
+    <!-- Deneb visuals -->
+    <dialog class="proj-modal" id="proj-deneb">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Création de visuels Deneb</h4>
+        <p><strong>Contexte :</strong> Développement de visuels personnalisés Deneb pour enrichir les rapports Power BI.</p>
+        <p><strong>Leçons tirées :</strong> Valeur ajoutée des visuels personnalisés pour communiquer des insights complexes.</p>
+        <div class="modal-gallery"><img src="images/proj-deneb.png" alt=""></div>
+        <p><strong>Technos :</strong> Deneb, Power BI.</p>
+      </div>
+    </dialog>
+
+    <!-- Video tutoriel -->
+    <dialog class="proj-modal" id="proj-video">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Vidéo tutoriel explicative</h4>
+        <p><strong>Contexte :</strong> Production de vidéos courtes pour expliquer l'utilisation d'outils ou bonnes pratiques aux collègues.</p>
+        <p><strong>Leçons tirées :</strong> L'importance de supports accessibles pour la montée en compétences interne.</p>
+        <div class="modal-gallery"><img src="images/proj-video.png" alt=""></div>
+      </div>
+    </dialog>
+
+    <!-- Notion DB -->
+    <dialog class="proj-modal" id="proj-notion-db">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Base de données Notion</h4>
+        <p><strong>Contexte :</strong> Création d'une base centralisée sur Notion pour partager documents, processus et bonnes pratiques.</p>
+        <p><strong>Leçons tirées :</strong> Facilité d'accès aux ressources et meilleur partage entre collègues.</p>
+        <div class="modal-gallery"><img src="images/proj-notion.png" alt=""></div>
+      </div>
+    </dialog>
+
+    <!-- Fiches Notion -->
+    <dialog class="proj-modal" id="proj-notion-fiches">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Fiches Notion — Bonnes pratiques</h4>
+        <p><strong>Contexte :</strong> Fiches pratiques (ex. bonnes pratiques Power BI) mises à disposition des équipes pour homogénéiser les méthodes.</p>
+        <p><strong>Leçons tirées :</strong> Documentation concise et accessible = gains de temps opérationnels.</p>
+        <div class="modal-gallery"><img src="images/proj-fiches.png" alt=""></div>
+      </div>
+    </dialog>
+
+  </div> <!-- end modals-root -->
 
   <script>
     // année dynamique
@@ -332,11 +591,15 @@
         const dlg = document.getElementById(id);
         if(dlg){
           try{ dlg.showModal(); }
-          catch(err){ dlg.style.display = 'block'; dlg.setAttribute('open',''); }
+          catch(err){
+            dlg.style.display = 'block';
+            dlg.setAttribute('open','');
+          }
           return;
         }
       }
 
+      // close buttons
       const closeBtn = e.target.closest('[data-close]');
       if(closeBtn){
         const dlg = closeBtn.closest('dialog.proj-modal');
