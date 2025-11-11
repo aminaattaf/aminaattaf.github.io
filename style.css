@@ -224,12 +224,27 @@ h3{
   font-weight: 700;
 }
 
-/* LinkedIn image */
+/* Témoignages LinkedIn : texte + image côte à côte */
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem; /* espace entre texte et image */
+}
+
+.testimonial-text {
+  flex: 1 1 300px; /* prend l'espace disponible, minimum 300px */
+}
+
 .testimonial-image {
-  max-width: 90%;
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.testimonial-image img {
+  max-width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto;
+  border-radius: 8px; /* arrondir les angles pour un style pro */
 }
 
 
@@ -326,5 +341,6 @@ dialog.proj-modal::backdrop{
 
 /* small UX */
 a{transition:all .18s ease}
+
 
 
