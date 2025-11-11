@@ -296,6 +296,30 @@ dialog.proj-modal::backdrop{
   box-shadow:0 8px 20px rgba(0,0,0,0.08);
 }
 
+/* Témoignages LinkedIn : texte + image côte à côte */
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem; /* espace entre texte et image */
+}
+
+.testimonial-text {
+  flex: 1 1 300px; /* prend l'espace disponible, minimum 300px */
+}
+
+.testimonial-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.testimonial-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* arrondir les angles pour un style pro */
+}
+
+
 /* Responsive */
 @media (max-width:980px){
   .hero-grid{grid-template-columns:1fr 320px}
@@ -340,3 +364,5 @@ dialog.proj-modal::backdrop{
 
 /* small UX */
 a{transition:all .18s ease}
+
+
