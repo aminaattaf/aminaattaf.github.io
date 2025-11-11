@@ -4,20 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Amina Attaf — Portfolio</title>
-  <meta name="description" content="Portfolio d'Amina Attaf — Data Analyst / BUT Sciences des Données.">
+  <meta name="description" content="Portfolio d'Amina Attaf — Data Analyst / CY Tech.">
   <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
+
 <body>
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
         <h1>Amina <span>Attaf</span></h1>
-        <p class="subtitle">Data Analyst • BUT SD • CY Tech</p>
+        <p class="subtitle">Data Analyst • CY Tech</p>
       </div>
       <nav class="nav">
         <a href="#about">À propos</a>
         <a href="#projects">Projets</a>
+        <a href="#testimonials">Témoignages</a>
         <a href="#contact">Contact</a>
         <a class="btn-outline" href="cv.pdf" target="_blank">CV</a>
       </nav>
@@ -29,8 +32,8 @@
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <h2>Je donne vie aux données à travers des tableaux de bord intuitifs et des analyses qui font sens.<br><span>Data • Visualisation • BI</span></h2>
-          <p>Étudiante en première année de cycle ingénieur en informatique à CY Tech, diplômée d’un BUT en Sciences des Données, je me spécialise en datavisualisation et conception d’outils décisionnels. J'ai réalisé de nombreux projets académiques et professionnels portant sur la collecte, le traitement, l'analyse et la restitution des données.</p>
+          <h2>Je donne vie aux données à travers des tableaux de bord intuitifs et des analyses percutantes.<br><span>Data • Visualisation • BI</span></h2>
+          <p>Étudiante à CY Tech, passionnée par la datavisualisation, la business intelligence et la transformation des données en leviers d’action. J’ai développé des projets variés alliant rigueur analytique et sens esthétique.</p>
           <div class="hero-ctas">
             <a class="btn-primary" href="#projects">Voir mes projets</a>
             <a class="btn-ghost" href="https://www.linkedin.com/in/amina-attaf" target="_blank">LinkedIn</a>
@@ -46,7 +49,7 @@
     <section id="about" class="section">
       <div class="container">
         <h3>À propos</h3>
-        <p>Étudiante en première année de cycle ingénieur en informatique à CY Tech et diplômée d’un BUT en Sciences des Données, j’ai acquis des compétences en analyse, modélisation et restitution de données via des projets universitaires (SAE, challenges) et des expériences en entreprise (stage et alternance). Mes missions ont couvert la conception et l’automatisation de tableaux de bord Power BI, la création de bases de données et l’accompagnement utilisateur pour des outils décisionnels.</p>
+        <p>Étudiante en première année de cycle ingénieur à CY Tech après un BUT Sciences des Données, je me spécialise en data visualisation et outils décisionnels. Mon parcours m’a permis d’acquérir une double compétence technique et analytique : traitement, modélisation et visualisation de données. </p>
       </div>
     </section>
 
@@ -54,220 +57,71 @@
     <section id="projects" class="section">
       <div class="container">
         <h3>Projets</h3>
-        <p class="muted">Cliquez sur une fiche pour découvrir le détail complet du projet.</p>
+        <p class="muted">Cliquez sur un projet pour en savoir plus.</p>
 
-        <!-- CATÉGORIE 1 : PRO -->
+        <!-- CATÉGORIE 1 : PROJETS PROFESSIONNELS -->
         <div class="category">
-          <h4 class="category-title">Catégorie 1 : Projets professionnels (stage & alternance)</h4>
+          <h4 class="category-title">Catégorie 1 : Projets professionnels</h4>
 
           <!-- 1.1 Tableaux de bord Power BI -->
           <div class="subsection">
             <h5>1.1 Tableaux de bord Power BI</h5>
             <div class="projects-grid">
-              <article class="proj-card" data-cat="pro" data-projid="proj-portefeuille">
-                <div class="proj-thumb"><img src="images/proj-portefeuille.png" alt="Suivi portefeuille jeune"></div>
-                <div class="proj-info">
-                  <h4>Suivi du portefeuille jeune</h4>
-                  <p>Tableau de bord pour suivre les parcours et indicateurs des jeunes accompagnés.</p>
-                </div>
-              </article>
-
-              <article class="proj-card" data-cat="pro" data-projid="proj-flux">
-                <div class="proj-thumb"><img src="images/proj-flux.png" alt="Flux de données"></div>
-                <div class="proj-info">
-                  <h4>Flux de données Power BI</h4>
-                  <p>Mise en place et automatisation des flux d'alimentation et transformations.</p>
-                </div>
-              </article>
-
-              <article class="proj-card" data-cat="pro" data-projid="proj-suivi-activite">
-                <div class="proj-thumb"><img src="images/proj-suivi.png" alt="Suivi activité"></div>
-                <div class="proj-info">
-                  <h4>Suivi d'activité</h4>
-                  <p>Dashboards pour le suivi opérationnel des activités et indicateurs.</p>
-                </div>
-              </article>
-
-              <article class="proj-card" data-cat="pro" data-projid="proj-reseau">
-                <div class="proj-thumb"><img src="images/proj-reseau.png" alt="Participation du réseau"></div>
-                <div class="proj-info">
-                  <h4>Participation du réseau</h4>
-                  <p>Outils d’analyse et de mesure de la participation des acteurs du réseau.</p>
-                </div>
-              </article>
+              <article class="proj-card" data-projid="proj-portefeuille"><div class="proj-thumb"><img src="images/proj-portefeuille.png" alt="Portefeuille jeune"></div><div class="proj-info"><h4>Suivi du portefeuille jeune</h4><p>Tableau de bord Power BI pour visualiser les parcours jeunes.</p></div></article>
+              <article class="proj-card" data-projid="proj-flux"><div class="proj-thumb"><img src="images/proj-flux.png" alt="Flux"></div><div class="proj-info"><h4>Flux de données Power BI</h4><p>Automatisation des flux de données et gestion d’actualisation.</p></div></article>
+              <article class="proj-card" data-projid="proj-suivi"><div class="proj-thumb"><img src="images/proj-suivi.png" alt="Suivi activité"></div><div class="proj-info"><h4>Suivi d’activité</h4><p>Indicateurs clés pour la mesure de performance des missions.</p></div></article>
+              <article class="proj-card" data-projid="proj-reseau"><div class="proj-thumb"><img src="images/proj-reseau.png" alt="Réseau"></div><div class="proj-info"><h4>Participation du réseau</h4><p>Mesure de la contribution des partenaires régionaux.</p></div></article>
             </div>
           </div>
 
-          <!-- 1.2 Outils & supports internes -->
+          <!-- 1.2 Outils et supports internes -->
           <div class="subsection">
             <h5>1.2 Outils et supports internes</h5>
             <div class="projects-grid">
-              <article class="proj-card" data-cat="pro" data-projid="proj-deneb">
-                <div class="proj-thumb"><img src="images/proj-deneb.png" alt="Deneb visuals"></div>
-                <div class="proj-info">
-                  <h4>Création de visuels Deneb</h4>
-                  <p>Développement de visuels personnalisés pour enrichir les rapports Power BI.</p>
-                </div>
-              </article>
-
-              <article class="proj-card" data-cat="pro" data-projid="proj-video">
-                <div class="proj-thumb"><img src="images/proj-video.png" alt="Tutoriel vidéo"></div>
-                <div class="proj-info">
-                  <h4>Vidéos tutoriels d’outils</h4>
-                  <p>Création de vidéos explicatives pour accompagner et former les collègues.</p>
-                </div>
-              </article>
-
-              <article class="proj-card" data-cat="pro" data-projid="proj-notion-db">
-                <div class="proj-thumb"><img src="images/proj-notion.png" alt="Notion DB"></div>
-                <div class="proj-info">
-                  <h4>Base de données Notion</h4>
-                  <p>Création d’une base Notion centralisant documents et procédures internes.</p>
-                </div>
-              </article>
-
-              <article class="proj-card" data-cat="pro" data-projid="proj-notion-fiches">
-                <div class="proj-thumb"><img src="images/proj-fiches.png" alt="Fiches Notion"></div>
-                <div class="proj-info">
-                  <h4>Fiches Notion pratiques</h4>
-                  <p>Conception de fiches “bonnes pratiques” (Power BI, automatisation, outils).</p>
-                </div>
-              </article>
+              <article class="proj-card" data-projid="proj-deneb"><div class="proj-thumb"><img src="images/proj-deneb.png" alt="Deneb"></div><div class="proj-info"><h4>Création de visuels Deneb</h4><p>Conception de visuels personnalisés pour Power BI.</p></div></article>
+              <article class="proj-card" data-projid="proj-video"><div class="proj-thumb"><img src="images/proj-video.png" alt="Vidéo"></div><div class="proj-info"><h4>Vidéos tutoriels</h4><p>Création de vidéos explicatives sur l’usage des outils internes.</p></div></article>
+              <article class="proj-card" data-projid="proj-notion-db"><div class="proj-thumb"><img src="images/proj-notion.png" alt="Notion DB"></div><div class="proj-info"><h4>Base de données Notion</h4><p>Organisation documentaire interne sur Notion.</p></div></article>
+              <article class="proj-card" data-projid="proj-notion-fiches"><div class="proj-thumb"><img src="images/proj-fiches.png" alt="Fiches"></div><div class="proj-info"><h4>Fiches pratiques Notion</h4><p>Bonnes pratiques et ressources Power BI internes.</p></div></article>
             </div>
           </div>
         </div>
 
-        <!-- CATÉGORIE 2 : ACADÉMIQUES -->
+        <!-- CATÉGORIE 2 : PROJETS ACADÉMIQUES -->
         <div class="category">
           <h4 class="category-title">Catégorie 2 : Projets académiques</h4>
 
           <!-- 2.1 Traiter -->
           <div class="subsection">
-            <h5>2.1 Traiter (Collecte & préparation)</h5>
+            <h5>2.1 Traiter</h5>
             <div class="projects-grid">
-              <article class="proj-card" data-cat="academique" data-projid="proj-reporting">
-                <div class="proj-thumb"><img src="images/proj-reporting.png" alt="Reporting"></div>
-                <div class="proj-info">
-                  <h4>Reporting (SAE) — 1ʳᵉ année</h4>
-                  <p>Extraction et restitution de données via SQL et dashboards.</p>
-                </div>
-              </article>
-
-              <article class="proj-card" data-cat="academique" data-projid="proj-qlikview">
-                <div class="proj-thumb"><img src="images/proj-qlikview.png" alt="QlikView"></div>
-                <div class="proj-info">
-                  <h4>QlikView — 1ʳᵉ année</h4>
-                  <p>Construction de dashboards interactifs sous QlikView.</p>
-                </div>
-              </article>
-
-              <article class="proj-card" data-cat="academique" data-projid="proj-powerbi1">
-                <div class="proj-thumb"><img src="images/proj-powerbi1.png" alt="Power BI"></div>
-                <div class="proj-info">
-                  <h4>Power BI — 1ʳᵉ année</h4>
-                  <p>Création de tableaux de bord et mesures DAX simples.</p>
-                </div>
-              </article>
-
-              <article class="proj-card" data-cat="academique" data-projid="proj-dataviz">
-                <div class="proj-thumb"><img src="images/proj-dataviz.png" alt="Challenge Dataviz"></div>
-                <div class="proj-info">
-                  <h4>Challenge DataViz — SNCF</h4>
-                  <p>Challenge de 24h pour créer un tableau de bord pertinent.</p>
-                </div>
-              </article>
-
-              <article class="proj-card" data-cat="academique" data-projid="proj-energie">
-                <div class="proj-thumb"><img src="images/proj-energie.png" alt="Consommation énergétique"></div>
-                <div class="proj-info">
-                  <h4>Consommation énergétique — 2ᵉ année</h4>
-                  <p>Modélisation et restitution pour des cas concrets.</p>
-                </div>
-              </article>
-
-              <article class="proj-card" data-cat="academique" data-projid="proj-sidbdr">
-                <div class="proj-thumb"><img src="images/proj-sidbdr.png" alt="SID / BDR"></div>
-                <div class="proj-info">
-                  <h4>SID / BDR — 2ᵉ année</h4>
-                  <p>Modélisation décisionnelle : MCD / MLD et entrepôts.</p>
-                </div>
-              </article>
-
-              <article class="proj-card" data-cat="academique" data-projid="proj-vba">
-                <div class="proj-thumb"><img src="images/proj-vba.png" alt="VBA"></div>
-                <div class="proj-info">
-                  <h4>VBA — 2ᵉ année</h4>
-                  <p>Automatisation de tâches et formulaires sous Excel.</p>
-                </div>
-              </article>
+              <article class="proj-card" data-projid="proj-reporting"><div class="proj-thumb"><img src="images/proj-reporting.png" alt="Reporting"></div><div class="proj-info"><h4>Reporting (1ère année)</h4><p>Extraction SQL et visualisation Power BI.</p></div></article>
+              <article class="proj-card" data-projid="proj-dataviz"><div class="proj-thumb"><img src="images/proj-dataviz.png" alt="DataViz"></div><div class="proj-info"><h4>Challenge DataViz SNCF</h4><p>Création d’un tableau de bord en 24h.</p></div></article>
+              <article class="proj-card" data-projid="proj-vba"><div class="proj-thumb"><img src="images/proj-vba.png" alt="VBA"></div><div class="proj-info"><h4>VBA (2ème année)</h4><p>Automatisation et formulaires Excel.</p></div></article>
             </div>
           </div>
 
           <!-- 2.2 Analyser -->
           <div class="subsection">
-            <h5>2.2 Analyser (Exploration & statistique)</h5>
+            <h5>2.2 Analyser</h5>
             <div class="projects-grid">
-              <article class="proj-card" data-cat="analyse" data-projid="proj-classif">
-                <div class="proj-thumb"><img src="images/proj-classif.png" alt="Classification automatique"></div>
-                <div class="proj-info">
-                  <h4>Classification automatique — INSEE</h4>
-                  <p>CAH sur données régionales, interprétation et visualisation.</p>
-                </div>
-              </article>
-
-              <article class="proj-card" data-cat="analyse" data-projid="proj-nba">
-                <div class="proj-thumb"><img src="images/proj-nba.png" alt="Projet NBA"></div>
-                <div class="proj-info">
-                  <h4>Projet statistique — NBA</h4>
-                  <p>Analyse exploratoire et descriptive sur données sportives.</p>
-                </div>
-              </article>
+              <article class="proj-card" data-projid="proj-nba"><div class="proj-thumb"><img src="images/proj-nba.png" alt="NBA"></div><div class="proj-info"><h4>Projet NBA</h4><p>Analyse exploratoire et statistique.</p></div></article>
+              <article class="proj-card" data-projid="proj-classif"><div class="proj-thumb"><img src="images/proj-classif.png" alt="Classification"></div><div class="proj-info"><h4>Classification automatique</h4><p>CAH et visualisation sur données régionales.</p></div></article>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- 2.3 Valoriser -->
-          <div class="subsection">
-            <h5>2.3 Valoriser (Restitution & communication)</h5>
-            <div class="projects-grid">
-              <article class="proj-card" data-cat="valoriser" data-projid="proj-enquete">
-                <div class="proj-thumb"><img src="images/proj-enquete.png" alt="Enquête"></div>
-                <div class="proj-info">
-                  <h4>Mise en œuvre d'une enquête — 1ʳᵉ année</h4>
-                  <p>Création du questionnaire, collecte et analyse statistique.</p>
-                </div>
-              </article>
-
-              <article class="proj-card" data-cat="valoriser" data-projid="proj-energie">
-                <div class="proj-thumb"><img src="images/proj-energie.png" alt="Consommation énergétique"></div>
-                <div class="proj-info">
-                  <h4>Consommation énergétique — 2ᵉ année</h4>
-                  <p>Restitution finale via dashboards et rapport technique.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <!-- 2.4 Développer -->
-          <div class="subsection">
-            <h5>2.4 Développer (Programmation & automatisation)</h5>
-            <div class="projects-grid">
-              <article class="proj-card" data-cat="developper" data-projid="proj-poo">
-                <div class="proj-thumb"><img src="images/proj-poo.png" alt="POO"></div>
-                <div class="proj-info">
-                  <h4>Programmation orientée objet — 2ᵉ année</h4>
-                  <p>Conception d’applications Python/VBA modulaires et réutilisables.</p>
-                </div>
-              </article>
-
-              <article class="proj-card" data-cat="developper" data-projid="proj-scraping">
-                <div class="proj-thumb"><img src="images/proj-scraping.png" alt="Collecte automatisée"></div>
-                <div class="proj-info">
-                  <h4>Collecte automatisée de données web — 2ᵉ année</h4>
-                  <p>Scraping et APIs pour automatiser la collecte de données externes.</p>
-                </div>
-              </article>
-            </div>
-          </div>
+    <!-- TÉMOIGNAGES -->
+    <section id="testimonials" class="section alt">
+      <div class="container testimonials-grid">
+        <div class="testimonial-text">
+          <h3>Avis & Témoignages LinkedIn</h3>
+          <p>Découvrez les retours de mon réseau professionnel sur mon travail et mes projets. Cliquez ci-dessous pour lire le post complet.</p>
+          <a class="btn-primary" href="https://www.linkedin.com/posts/amina-attaf" target="_blank">Voir le post LinkedIn</a>
+        </div>
+        <div class="testimonial-image">
+          <img src="images/linkedin-post.png" alt="Post LinkedIn" />
         </div>
       </div>
     </section>
@@ -284,15 +138,24 @@
         </div>
       </div>
     </section>
-
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Amina Attaf — Portfolio</p>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="container"><p>© <span id="year"></span> Amina Attaf — Portfolio</p></div></footer>
 
-  <script src="script.js"></script>
+  <!-- 🔹 MODALES -->
+  <div id="modals-root">
+    <dialog class="proj-modal" id="proj-portefeuille"><button class="modal-close" data-close>&times;</button><div class="modal-body"><h4>Suivi du portefeuille jeune</h4><p>Projet Power BI complet sur le suivi des parcours jeunes et leurs indicateurs d’insertion.</p></div></dialog>
+    <dialog class="proj-modal" id="proj-flux"><button class="modal-close" data-close>&times;</button><div class="modal-body"><h4>Flux de données Power BI</h4><p>Automatisation des connexions et transformations Power Query.</p></div></dialog>
+    <dialog class="proj-modal" id="proj-suivi"><button class="modal-close" data-close>&times;</button><div class="modal-body"><h4>Suivi d’activité</h4><p>Tableau de bord dynamique de pilotage.</p></div></dialog>
+    <dialog class="proj-modal" id="proj-reseau"><button class="modal-close" data-close>&times;</button><div class="modal-body"><h4>Participation du réseau</h4><p>Analyse de la contribution des acteurs via Power BI.</p></div></dialog>
+    <dialog class="proj-modal" id="proj-deneb"><button class="modal-close" data-close>&times;</button><div class="modal-body"><h4>Visuels Deneb</h4><p>Création de visuels JSON personnalisés dans Power BI.</p></div></dialog>
+    <dialog class="proj-modal" id="proj-video"><button class="modal-close" data-close>&times;</button><div class="modal-body"><h4>Vidéos tutoriels</h4><p>Conception de supports explicatifs internes.</p></div></dialog>
+    <dialog class="proj-modal" id="proj-notion-db"><button class="modal-close" data-close>&times;</button><div class="modal-body"><h4>Base Notion</h4><p>Base documentaire structurée pour le service BI.</p></div></dialog>
+    <dialog class="proj-modal" id="proj-notion-fiches"><button class="modal-close" data-close>&times;</button><div class="modal-body"><h4>Fiches Notion</h4><p>Guides d’utilisation et procédures Power BI.</p></div></dialog>
+    <dialog class="proj-modal" id="proj-reporting"><button class="modal-close" data-close>&times;</button><div class="modal-body"><h4>Reporting</h4><p>Projet académique de reporting SQL et Power BI.</p></div></dialog>
+    <dialog class="proj-modal" id="proj-dataviz"><button class="modal-close" data-close>&times;</button><div class="modal-body"><h4>Challenge Dataviz SNCF</h4><p>Participation au hackathon Dataviz SNCF.</p></div></dialog>
+    <dialog class="proj-modal" id="proj-nba"><button class="modal-close" data-close>&times;</button><div class="modal-body"><h4>Projet NBA</h4><p>Analyse statistique des joueurs NBA.</p></div></dialog>
+    <dialog class="proj-modal" id="proj-classif"><button class="modal-close" data-close>&times;</button><div class="modal-body"><h4>Classification automatique</h4><p>Classification hiérarchique et dataviz.</p></div></dialog>
+  </div>
 </body>
 </html>
