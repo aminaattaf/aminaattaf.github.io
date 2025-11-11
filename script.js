@@ -1,42 +1,66 @@
-// année dynamique
+// Année dynamique dans le footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// smooth scroll
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  a.addEventListener('click', e=>{
-    const target = document.querySelector(a.getAttribute('href'));
-    if(target){
+// Smooth scroll pour les ancres
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if(target) {
       e.preventDefault();
-      target.scrollIntoView({behavior:'smooth'});
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
     }
   });
 });
 
-// gestion des modales
-document.addEventListener('click', e=>{
+// Gestion des modales - Ouverture au clic sur une carte
+document.addEventListener('click', function(e) {
+  // Ouverture de modal au clic sur une carte projet
   const card = e.target.closest('.proj-card');
-  if(card){
-    const id = card.dataset.projid;
-    const dlg = document.getElementById(id);
-    if(dlg){
-      try{ dlg.showModal(); }
-      catch{ dlg.setAttribute('open',''); dlg.style.display='block'; }
+  if(card) {
+    const projectId = card.dataset.projid;
+    const dialog = document.getElementById(projectId);
+    
+    if(dialog) {
+      dialog.showModal();
     }
+    return;
   }
-  const close = e.target.closest('[data-close]');
-  if(close){
-    const dlg = close.closest('dialog.proj-modal');
-    if(dlg){
-      try{ dlg.close(); }
-      catch{ dlg.removeAttribute('open'); dlg.style.display='none'; }
+
+  // Fermeture de modal au clic sur le bouton close
+  const closeBtn = e.target.closest('[data-close]');
+  if(closeBtn) {
+    const dialog = closeBtn.closest('dialog.proj-modal');
+    if(dialog) {
+      dialog.close();
     }
   }
 });
 
-document.addEventListener('keydown', e=>{
-  if(e.key === 'Escape'){
-    document.querySelectorAll('dialog.proj-modal').forEach(d=>{
-      if(d.open) d.close();
+// Fermeture au clic sur le backdrop (en dehors de la modale)
+document.querySelectorAll('dialog.proj-modal').forEach(dialog => {
+  dialog.addEventListener('click', function(e) {
+    const rect = dialog.getBoundingClientRect();
+    
+    // Vérifier si le clic est en dehors du contenu de la modale
+    if (
+      e.clientX < rect.left ||
+      e.clientX > rect.right ||
+      e.clientY < rect.top ||
+      e.clientY > rect.bottom
+    ) {
+      dialog.close();
+    }
+  });
+});
+
+// Fermeture avec la touche Échap (déjà natif avec showModal mais on le garde pour compatibilité)
+document.addEventListener('keydown', function(e) {
+  if(e.key === 'Escape') {
+    document.querySelectorAll('dialog.proj-modal[open]').forEach(dialog => {
+      dialog.close();
     });
   }
 });
