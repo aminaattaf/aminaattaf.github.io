@@ -356,7 +356,7 @@
         <ul>
           <li>Améliorer la lisibilité et l’ergonomie du tableau de bord existant,</li>
           <li>Intégrer de nouvelles pages interactives (menu déroulant, widgets, vidéos explicatives),</li>
-          <li>Permettre aux conseillers d’accéder rapidement aux informations utiles pour le suivi.</li>
+          <li>Permettre aux conseiller.es d’accéder rapidement aux informations utiles pour le suivi.</li>
         </ul>
       </p>
 
@@ -369,9 +369,9 @@
         </ul>
       </p>
 
-      <p>En parallèle, j’ai conçu un <strong>questionnaire destiné aux conseillers</strong> afin de recueillir leurs retours sur la première version du tableau de bord. Ces retours m’ont permis d’adapter la mise en page et d’améliorer la page “widgets” selon leurs besoins. Ce travail m’a également permis de m’initier à une approche orientée <strong>UX (expérience utilisateur)</strong>.</p>
+      <p>En parallèle, j’ai conçu un <strong>questionnaire destiné aux conseiller.es</strong> afin de recueillir leurs retours sur la première version du tableau de bord. Ces retours m’ont permis d’adapter la mise en page et d’améliorer la page “widgets” selon leurs besoins. Ce travail m’a également permis de m’initier à une approche orientée <strong>UX (expérience utilisateur)</strong>.</p>
 
-      <p><strong>Résultats :</strong> Le tableau de bord final est plus intuitif, complet et apprécié des conseillers. Il offre une vision claire et actualisée des jeunes accompagnés, tout en restant simple d’utilisation.</p>
+      <p><strong>Résultats :</strong> Le tableau de bord final est plus intuitif, complet et apprécié des conseiller.es. Il offre une vision claire et actualisée des jeunes accompagnés, tout en restant simple d’utilisation.</p>
 
       <div class="modal-gallery">
         <img src="images/proj-portefeuille.png" alt="Page menu déroulant du tableau de bord">
@@ -380,38 +380,40 @@
         <img src="images/proj-portefeuille4.png" alt="Page widgets – types de jeunes en difficulté">
       </div>
 
-      <p><strong>Outils utilisés :</strong> Power BI, Power Query, Excel, Notion (suivi), et travail UX avec les conseillers.</p>
+      <p><strong>Outils utilisés :</strong> Power BI, Power Query, Excel, Notion (suivi du projet), et travail UX avec les conseiller.es.</p>
     </div>
   </dialog>
 
 
-  <!-- 🌟 PROJET : Flux de données Power BI -->
+  <!-- 🌟 PROJET : Automatisation de la récupération des flux de données Power BI -->
   <dialog class="proj-modal" id="proj-flux">
     <button class="modal-close" data-close>&times;</button>
     <div class="modal-body">
-      <h4>Flux de données Power BI</h4>
-
-      <p><strong>Contexte :</strong> Afin d’éviter les mises à jour manuelles répétitives, il a été nécessaire de créer un flux automatique entre les fichiers Excel et Power BI. Ce projet visait à automatiser la récupération, le nettoyage et la mise à jour des données.</p>
-
-      <p><strong>Objectifs :</strong>
-        <ul>
-          <li>Rendre les tableaux de bord autonomes grâce à une actualisation automatique,</li>
-          <li>Garantir la fiabilité des données partagées,</li>
-          <li>Standardiser les sources utilisées par plusieurs rapports Power BI.</li>
-        </ul>
-      </p>
-
-      <p><strong>Méthodologie :</strong> J’ai d’abord centralisé les fichiers Excel dans un dossier unique, puis configuré un flux Power Query pour automatiser la transformation et la mise à jour. Ensuite, un flux Power BI Service (dataflow) a été mis en place pour alimenter les rapports avec un déclenchement planifié.</p>
-
-      <p><strong>Résultats :</strong> Les rapports sont désormais actualisés automatiquement chaque matin sans intervention manuelle. Cela a permis de gagner du temps et de fiabiliser les analyses diffusées.</p>
-
+      <h4>Automatisation de la récupération des flux de données Power BI</h4>
+  
+      <p><strong>Contexte :</strong> Dans le cadre de la création d’un système d’information partagé avec France Travail, il était nécessaire d’identifier précisément les sources de données de tous les tableaux de bord Power BI ainsi que les informations relatives à leur actualisation (dates, occurrences, etc.). L’objectif principal était de centraliser ces informations pour disposer d’une base fiable et commune.</p>
+  
+      <p><strong>Objectifs :</strong></p>
+      <ul>
+        <li>Récupérer automatiquement les informations sur les flux de données Power BI ;</li>
+        <li>Identifier les espaces de travail, datasets, et leurs dates d’actualisation ;</li>
+        <li>Faciliter la contribution au futur Système d’Information partagé avec France Travail.</li>
+      </ul>
+  
+      <p><strong>Méthodologie :</strong> Après plusieurs recherches infructueuses sur différents outils (PurView, add-ons externes, etc.), une solution a été trouvée grâce à l’échange avec un collègue : utiliser <em>PowerShell</em> pour interagir directement avec le service Power BI.  
+      J’ai ainsi développé un script permettant de se connecter au service Power BI, de récupérer automatiquement les espaces de travail, les datasets associés, ainsi que leurs dates de création et d’actualisation.  
+      Dans un second temps, j’ai appelé l’API REST de Power BI pour obtenir des informations plus détaillées, notamment sur la fréquence des actualisations et le nom des sources de données.</p>
+  
+      <p><strong>Résultats :</strong> Cette automatisation permet désormais d’avoir une vision complète et actualisée de tous les flux de données Power BI du pôle. Les informations sont exportées dans un fichier exploitable pour un suivi global, ce qui facilite la maintenance et la collaboration entre les équipes.</p>
+  
       <div class="modal-gallery">
-        <img src="images/proj-flux.png" alt="Aperçu du flux Power BI">
+        <img src="images/proj-flux.png" alt="Interface Power BI présentant la récupération des flux de données">
       </div>
-
-      <p><strong>Outils utilisés :</strong> Power BI Service, Power Query, Excel.</p>
+  
+      <p><strong>Outils utilisés :</strong> Power BI Service, PowerShell, API REST Power BI, Azure AD.</p>
     </div>
   </dialog>
+
 
 
   <!-- 🌟 PROJET : Suivi d’activité -->
@@ -469,7 +471,7 @@
         <img src="images/proj-reseau4.png" alt="Page d’extraction 2">
       </div>
 
-      <p><strong>Outils utilisés :</strong> Power BI, Power Query, Excel.</p>
+      <p><strong>Outils utilisés :</strong> Power BI, Power Query, Base de données Notion, Notebook Fabric.</p>
     </div>
   </dialog>
 
@@ -502,20 +504,20 @@
     <div class="modal-body">
       <h4>Vidéos tutoriels</h4>
 
-      <p><strong>Contexte :</strong> Face à la demande croissante de formation interne, l’objectif était de concevoir des vidéos explicatives destinées aux collaborateurs pour favoriser l’adoption des outils Power BI et Notion.</p>
+      <p><strong>Contexte :</strong> L’objectif était de concevoir des vidéos explicatives destinées aux collaborateurs pour faciliter la découverte et la prise en main des outils interne créé par la DSIML.</p>
 
-      <p><strong>Méthodologie :</strong> Rédaction de scripts pédagogiques, enregistrement avec OBS Studio, montage sur Canva et intégration sur l’intranet. Les vidéos couvraient les thématiques suivantes : navigation dans Power BI, création de mesures DAX simples, et organisation documentaire sous Notion.</p>
+      <p><strong>Méthodologie :</strong> Création de la vidéo sur Canva en respectant la charte graphique de la DSIML.</p>
 
-      <p><strong>Résultats :</strong> Plus d’une dizaine de tutoriels publiés, utilisés lors des sessions d’accueil des nouveaux arrivants. Les vidéos ont permis d’uniformiser les pratiques et de réduire les erreurs récurrentes.</p>
+      <p><strong>Résultats :</strong> Les vidéos ont permis d’informiser les collaborateurs et de les accompagner lors de la prise en main.</p>
 
-      <p><strong>Leçons tirées :</strong> Compréhension des principes de vulgarisation technique et de communication visuelle.</p>
+      <p><strong>Leçons tirées :</strong> Ce travail m’a permis de réaliser un exercice de vulgarisation et de me mettre à la place de l’utilisateur, tant pour la compréhension du contenu que pour des aspects visuels comme le choix des couleurs, la taille du texte ou encore la vitesse de la vidéo.</p>
 
       <div class="modal-gallery">
         <img src="images/proj-video.png" alt="Vidéo tutoriel Power BI">
         <img src="images/proj-video2.png" alt="Montage tutoriel">
       </div>
 
-      <p><strong>Outils :</strong> Canva, OBS Studio, Power BI, Notion.</p>
+      <p><strong>Outils :</strong> Canva.</p>
     </div>
   </dialog>
 
@@ -538,7 +540,7 @@
         <img src="images/proj-notion.png" alt="Base Notion">
       </div>
 
-      <p><strong>Outils :</strong> Notion, Power BI, Structuration documentaire.</p>
+      <p><strong>Outils :</strong> Notion, Power BI, Power BI Helper, Power BI Documenter.</p>
     </div>
   </dialog>
 
@@ -549,7 +551,7 @@
     <div class="modal-body">
       <h4>Fiches Notion pratiques</h4>
 
-      <p><strong>Contexte :</strong> Dans la continuité du projet Notion, des fiches explicatives ont été créées pour accompagner les collaborateurs dans l’utilisation des outils internes.</p>
+      <p><strong>Contexte :</strong> L'ensemble de la DSIML travaillant majoritairement sur Notion. J'ai été créées des fiches explicatives pour informer ou rappeler certaines notion du métier.</p>
 
       <p><strong>Méthodologie :</strong> Création de modèles uniformes sur Notion, structuration par thématique (Power BI, automatisation, bonnes pratiques) et insertion de captures d’écran illustratives.</p>
 
@@ -561,7 +563,7 @@
         <img src="images/proj-fiches.png" alt="Fiche Notion Power BI">
       </div>
 
-      <p><strong>Outils :</strong> Notion, Documentation interne.</p>
+      <p><strong>Outils :</strong> Notion.</p>
     </div>
   </dialog>
   
@@ -799,6 +801,7 @@
   </script>
 </body>
 </html>
+
 
 
 
