@@ -399,13 +399,28 @@
   </dialog>
 
   <!-- Projets académiques -->
-  <dialog class="proj-modal" id="proj-reporting">
-    <button class="modal-close" data-close>&times;</button>
-    <div class="modal-body">
-      <h4>Reporting</h4>
-      <p>Projet académique de reporting avec SQL et restitution Power BI.</p>
-    </div>
-  </dialog>
+
+  <!-- PROJ: SAE Reporting (complete content) -->
+    <dialog class="proj-modal" id="proj-reporting">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>SAE — Reporting</h4>
+
+        <p><strong>Contexte :</strong> SAE de première année axée sur le reporting. Le groupe (trois personnes) devait interroger une base de données et répondre à des questions métiers via des requêtes SQL, puis restituer les résultats sous la forme d’un tableau de bord.</p>
+
+        <p><strong>Méthodologie :</strong> Conception et exécution de requêtes SQL pour extraire les données utiles, consolidation des résultats, et création d’un dashboard mettant en valeur les indicateurs les plus pertinents. Travail en interaction avec le professeur (commanditaire pédagogique) afin de clarifier les attentes et critères d’évaluation.</p>
+
+        <p><strong>Résultats & livrables :</strong> Tableau de bord opérationnel, rapport de méthodologie et d’analyse, et présentation de restitution. Ce projet a permis d’expérimenter l’intégralité du flux ETL simple → reporting.</p>
+
+        <p><strong>Leçons tirées :</strong> Comprendre la relation client/commanditaire, l’importance des itérations pour affiner les livrables, et la nécessité d’un bon cadrage des métriques à restituer.</p>
+
+        <div class="modal-gallery">
+          <img src="images/proj-reporting.png" alt="Extrait SAE Reporting">
+        </div>
+
+        <p><strong>Technologies :</strong> SQL, Power BI / Qlik (pour restitution).</p>
+      </div>
+    </dialog>
 
   <dialog class="proj-modal" id="proj-qlikview">
     <button class="modal-close" data-close>&times;</button>
@@ -423,21 +438,51 @@
     </div>
   </dialog>
 
-  <dialog class="proj-modal" id="proj-dataviz">
-    <button class="modal-close" data-close>&times;</button>
-    <div class="modal-body">
-      <h4>Challenge Dataviz SNCF</h4>
-      <p>Participation au challenge Dataviz de 24h pour créer un tableau de bord pertinent.</p>
-    </div>
-  </dialog>
+  <!-- PROJ: DataViz SNCF (complete content) -->
+    <dialog class="proj-modal" id="proj-dataviz">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Challenge DataViz — SNCF</h4>
 
-  <dialog class="proj-modal" id="proj-energie">
-    <button class="modal-close" data-close>&times;</button>
-    <div class="modal-body">
-      <h4>Consommation énergétique</h4>
-      <p>Projet annuel de modélisation et restitution des données de consommation énergétique.</p>
-    </div>
-  </dialog>
+        <p><strong>Contexte :</strong> Challenge Dataviz réalisé en 2023 sur les données de la SNCF. L’objectif était de définir une problématique adaptée au jeu de données fourni et de concevoir en une journée un tableau de bord pertinent répondant à cette problématique.</p>
+
+        <p><strong>Méthodologie :</strong> Traitement et nettoyage rapides des données fournies (format Excel), sélection des indicateurs pertinents, conception et réalisation d’un tableau de bord sur Power BI. Travail en équipe, prise de décisions rapides sur la visualisation et l’ergonomie du dashboard.</p>
+
+        <p><strong>Résultats & livrables :</strong> Deux tableaux de bord Power BI réalisés pendant le challenge, présentation orale et restitution dans le temps imparti. Ces livrables ont mis en valeur des KPIs pertinents et des filtres interactifs permettant d’explorer les jeux de données.</p>
+
+        <p><strong>Leçons tirées :</strong> Renforcement des compétences en datavisualisation et en travail sous contrainte temporelle ; importance de la communication au sein de l’équipe pour synchroniser les choix méthodologiques et esthétiques.</p>
+
+        <div class="modal-gallery">
+          <img src="images/proj-dataviz.png" alt="Extrait Challenge Dataviz">
+        </div>
+
+        <p><strong>Technologies :</strong> Power BI, Excel.</p>
+      </div>
+    </dialog>
+
+  <!-- PROJ: Consommation énergétique (complete content) -->
+    <dialog class="proj-modal" id="proj-energie">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Projet — Consommation énergétique (SID / BDR)</h4>
+
+        <p><strong>Contexte :</strong> Projet de deuxième année mené sur l’ensemble de l’année, visant à étudier la consommation énergétique pour deux commanditaires : la maison d’un commanditaire privé et les bâtiments d’une entreprise. Le projet a nécessité la modélisation de données, la compréhension des indicateurs énergétiques (DPE, DJU) et la restitution via tableaux de bord.</p>
+
+        <p><strong>Méthodologie :</strong> Étude des sources de données, conception de MCD/MLD (modèles conceptuel et logique de données), préparation et traitement des jeux de données, calcul d’indicateurs (DPE, DJU), et construction de rapports et dashboards sur Power BI adaptés aux attentes de chaque commanditaire.</p>
+
+        <p><strong>Résultats & livrables :</strong> Rapport final détaillé (méthodologie, choix des indicateurs, visualisations), plusieurs dashboards Power BI adaptés aux deux commanditaires, et une soutenance orale expliquant la démarche et les résultats.</p>
+
+        <p><strong>Difficultés rencontrées :</strong> Hétérogénéité des attentes entre les deux commanditaires, nécessité d’apprendre des notions techniques spécifiques au domaine (DPE, DJU), et gestion de la perte d’un membre de l’équipe en cours d’année entraînant une répartition dynamique des tâches.</p>
+
+        <p><strong>Leçons tirées :</strong> Importance de contextualiser les données, d’expliciter les choix méthodologiques lors de la restitution, et nécessité de communiquer clairement avec les commanditaires pour aligner les livrables sur leurs besoins.</p>
+
+        <div class="modal-gallery">
+          <img src="images/proj-energie.png" alt="Extrait consommation énergétique">
+        </div>
+
+        <p><strong>Technologies :</strong> Power BI, SQL, modélisation de données (MLD/MCD).</p>
+      </div>
+    </dialog>
 
   <dialog class="proj-modal" id="proj-sidbdr">
     <button class="modal-close" data-close>&times;</button>
@@ -455,29 +500,73 @@
     </div>
   </dialog>
 
-  <dialog class="proj-modal" id="proj-classif">
-    <button class="modal-close" data-close>&times;</button>
-    <div class="modal-body">
-      <h4>Classification automatique</h4>
-      <p>Analyse CAH sur données régionales et visualisation des clusters.</p>
-    </div>
-  </dialog>
+  <!-- PROJ: Classification automatique (complete content) -->
+    <dialog class="proj-modal" id="proj-classif">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Classification automatique — INSEE</h4>
 
-  <dialog class="proj-modal" id="proj-nba">
-    <button class="modal-close" data-close>&times;</button>
-    <div class="modal-body">
-      <h4>Projet NBA</h4>
-      <p>Analyse exploratoire et descriptive des données NBA avec Excel.</p>
-    </div>
-  </dialog>
+        <p><strong>Contexte :</strong> Projet sur des données de l’INSEE (chaque groupe avait une région à étudier). L’objectif était de concevoir et appliquer une méthode de classification automatique adaptée aux données (CAH retenue).</p>
 
-  <dialog class="proj-modal" id="proj-enquete">
-    <button class="modal-close" data-close>&times;</button>
-    <div class="modal-body">
-      <h4>Projet Enquête</h4>
-      <p>Conception et administration d’une enquête avec Sphinx, analyse statistique incluse.</p>
-    </div>
-  </dialog>
+        <p><strong>Méthodologie :</strong> Préparation et nettoyage des données (traitement des valeurs manquantes, sélection des variables pertinentes), application d’algorithmes de classification (CAH — Classification Ascendante Hiérarchique), analyse et interprétation des classes obtenues, et rédaction d’un rapport détaillé présentant la méthodologie et les résultats.</p>
+
+        <p><strong>Résultats & livrables :</strong> Rapport d’analyse complet, graphiques et synthèses des classes identifiées, et réflexion sur la pertinence des variables retenues.</p>
+
+        <p><strong>Leçons tirées :</strong> Apprentissage de la gestion de fichiers lourds sous R, nécessité d’adapter les méthodes aux contraintes de calcul, et importance des synthèses graphiques pour rendre compte des résultats multivariés.</p>
+
+        <div class="modal-gallery">
+          <img src="images/proj-classif.png" alt="Extrait classification automatique">
+        </div>
+
+        <p><strong>Technologies :</strong> R, analyses statistiques multivariées.</p>
+      </div>
+    </dialog>
+
+  <!-- PROJ: NBA (complete content) -->
+    <dialog class="proj-modal" id="proj-nba">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Projet statistique — données NBA</h4>
+
+        <p><strong>Contexte :</strong> Projet réalisé dans le cadre d’une SAE de première année portant sur les statistiques. Le projet a consisté en l’analyse d’une base de données de la NBA fournie au groupe. Nous étions un groupe de trois étudiants et la taille de la base a nécessité un partage de tâches et une coordination étroite pour l’exploration et le traitement des données.</p>
+
+        <p><strong>Méthodologie :</strong> Utilisation d’Excel pour l’exploration initiale des données, analyses univariées et calculs statistiques descriptifs. Production de synthèses numériques et graphiques pour mettre en évidence les caractéristiques principales des variables étudiées.</p>
+
+        <p><strong>Résultats & livrables :</strong> Rapport d’analyse, graphiques récapitulatifs, et page de garde du rapport. Le travail a permis d’identifier des tendances et de produire des visualisations claires favorisant la compréhension des résultats.</p>
+
+        <p><strong>Leçons tirées :</strong> Première expérience d’analyse de données réelles : apprentissage de la synthèse des informations issues d’analyses univariées, découverte du cycle complet d’un petit projet statistique (exploration, synthèse, restitution).</p>
+
+        <div class="modal-gallery">
+          <img src="images/proj-nba.png" alt="Extrait projet NBA">
+          <!-- ajoute d'autres images réelles de ton rapport ici -->
+        </div>
+
+        <p><strong>Technologies :</strong> Excel, analyses statistiques, reporting.</p>
+      </div>
+    </dialog>
+
+  <!-- PROJ: Enquête (complete content) -->
+    <dialog class="proj-modal" id="proj-enquete">
+      <button class="modal-close" data-close>&times;</button>
+      <div class="modal-body">
+        <h4>Mise en œuvre d'une enquête (SAE Enquête)</h4>
+
+        <p><strong>Contexte :</strong> Projet d’enquête (groupe de 7) visant à comprendre l’utilisation d’Internet par les lycéens. Le projet couvrait la conception du questionnaire (Sphinx), la collecte sur le terrain, la saisie et l’analyse des données, puis la soutenance des résultats.</p>
+
+        <p><strong>Méthodologie :</strong> Rédaction du questionnaire en tenant compte des biais potentiels, administration du questionnaire dans les lycées ciblés, saisie des réponses dans Sphinx, nettoyage des données et analyses statistiques descriptives et graphiques pour mettre en évidence les résultats clés.</p>
+
+        <p><strong>Résultats & livrables :</strong> Rapport d’enquête, questionnaire (annexe), analyses et graphiques, et soutenance orale. Le projet a mis en avant des résultats clés sur les usages et a permis d’identifier des biais méthodologiques à corriger lors d’enquêtes similaires.</p>
+
+        <p><strong>Leçons tirées :</strong> Apprentissage du travail en grand groupe (répartition des tâches), importance de la conception des questions pour limiter les biais, et capacité à synthétiser les résultats pour une audience non technique.</p>
+
+        <div class="modal-gallery">
+          <img src="images/proj-enquete.png" alt="Extrait projet Enquête">
+          <!-- si tu as l'annexe/questionnaire, uploade-la et ajoute un lien ci-dessous -->
+        </div>
+
+        <p><strong>Technologies :</strong> Sphinx, Excel, méthodes d’enquête et présentation.</p>
+      </div>
+    </dialog>
 
   <dialog class="proj-modal" id="proj-poo">
     <button class="modal-close" data-close>&times;</button>
