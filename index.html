@@ -340,70 +340,231 @@
     </div>
   </footer>
 
-  <!-- 🔹 MODALES -->
+
+
+<!-- 🔹 MODALES -->
 <div id="modals-root">
-  <!-- Projets professionnels -->
+
+  <!-- 🌟 PROJET : Suivi du portefeuille jeune -->
   <dialog class="proj-modal" id="proj-portefeuille">
     <button class="modal-close" data-close>&times;</button>
     <div class="modal-body">
       <h4>Suivi du portefeuille jeune</h4>
-      <p>Projet Power BI complet sur le suivi des parcours jeunes et leurs indicateurs d’insertion.</p>
+
+      <p><strong>Contexte :</strong> Ce projet s’inscrit dans la démarche d’amélioration du pilotage des actions menées par le réseau en faveur des jeunes. L’objectif était de centraliser les informations de suivi des jeunes accompagnés et de proposer un tableau de bord synthétique permettant d’évaluer la progression des parcours.</p>
+
+      <p><strong>Objectifs :</strong> Concevoir un tableau de bord Power BI ergonomique permettant de :
+        <ul>
+          <li>Visualiser les effectifs suivis selon les critères d’âge, de dispositif et de région,</li>
+          <li>Analyser la répartition des accompagnements et les indicateurs de sortie,</li>
+          <li>Faciliter la prise de décision et la communication auprès des directions régionales.</li>
+        </ul>
+      </p>
+
+      <p><strong>Méthodologie :</strong> L’ensemble des données sources a été collecté depuis plusieurs fichiers Excel consolidés dans Power Query. Après un important travail de nettoyage et de normalisation (gestion des doublons, typage, dates), les données ont été intégrées dans un modèle Power BI optimisé pour les performances. Des mesures DAX ont ensuite été créées pour calculer les indicateurs clés : taux de sortie, répartition par catégorie et suivi des parcours.</p>
+
+      <p><strong>Résultats & livrables :</strong> Le tableau de bord final offrait une vue interactive avec des filtres par région, type de suivi et période. Il permettait de générer automatiquement des rapports dynamiques destinés à la direction et aux coordinateurs. Ce projet a fortement contribué à l’uniformisation du suivi à l’échelle nationale.</p>
+
+      <p><strong>Leçons tirées :</strong> L’importance du travail de structuration des données avant toute visualisation et la rigueur nécessaire à la création d’indicateurs fiables et compréhensibles.</p>
+
+      <div class="modal-gallery">
+        <img src="images/proj-portefeuille.png" alt="Dashboard Suivi du portefeuille jeune">
+        <img src="images/proj-portefeuille2.png" alt="Exemple visuel Power BI">
+      </div>
+
+      <p><strong>Technologies :</strong> Power BI, Power Query, DAX, Excel.</p>
     </div>
   </dialog>
 
+
+  <!-- 🌟 PROJET : Flux de données Power BI -->
   <dialog class="proj-modal" id="proj-flux">
     <button class="modal-close" data-close>&times;</button>
     <div class="modal-body">
       <h4>Flux de données Power BI</h4>
-      <p>Automatisation des connexions et transformations Power Query.</p>
+
+      <p><strong>Contexte :</strong> Les différents tableaux de bord Power BI devaient être alimentés automatiquement pour réduire la charge manuelle de mise à jour. Le projet visait à mettre en place un flux de données standardisé et fiable entre les fichiers Excel sources et le service Power BI Service.</p>
+
+      <p><strong>Objectifs :</strong> 
+        <ul>
+          <li>Centraliser les données dans un flux unique Power BI,</li>
+          <li>Automatiser l’actualisation quotidienne,</li>
+          <li>Garantir la cohérence des données entre les rapports.</li>
+        </ul>
+      </p>
+
+      <p><strong>Méthodologie :</strong> Les fichiers sources (Excel, CSV) ont été importés dans Power BI Desktop, nettoyés dans Power Query et structurés dans un modèle relationnel. Des “dataflows” ont ensuite été créés sur Power BI Service avec des connexions planifiées. J’ai paramétré les passerelles pour l’accès sécurisé et mis en place des scripts pour notifier les erreurs de rafraîchissement.</p>
+
+      <p><strong>Résultats :</strong> Le processus d’alimentation est désormais automatisé, les rapports se mettent à jour chaque matin sans intervention humaine. Les erreurs de synchronisation ont chuté de 80 %.</p>
+
+      <p><strong>Leçons tirées :</strong> Maîtrise avancée de Power Query et compréhension du cycle complet de la donnée — de la source à la visualisation finale.</p>
+
+      <div class="modal-gallery">
+        <img src="images/proj-flux.png" alt="Flux Power BI">
+        <img src="images/proj-flux2.png" alt="Schéma du processus d’actualisation">
+      </div>
+
+      <p><strong>Technologies :</strong> Power BI Service, Power Query, Automatisation des flux, Gateway.</p>
     </div>
   </dialog>
 
+
+  <!-- 🌟 PROJET : Suivi d’activité -->
   <dialog class="proj-modal" id="proj-suivi-activite">
     <button class="modal-close" data-close>&times;</button>
     <div class="modal-body">
       <h4>Suivi d’activité</h4>
-      <p>Tableau de bord dynamique de pilotage des activités et indicateurs.</p>
+
+      <p><strong>Contexte :</strong> Ce tableau de bord a été conçu pour mesurer la performance et la charge d’activité des équipes au sein du réseau, en croisant des données issues de différents services (accompagnement, communication, partenariats).</p>
+
+      <p><strong>Objectifs :</strong> 
+        <ul>
+          <li>Suivre les indicateurs d’activité par période, région et type d’action,</li>
+          <li>Identifier les tendances et anomalies dans les volumes d’accompagnement,</li>
+          <li>Fournir un outil de pilotage en temps réel.</li>
+        </ul>
+      </p>
+
+      <p><strong>Méthodologie :</strong> Conception d’un modèle de données multi-sources dans Power BI. Utilisation de mesures DAX pour le calcul de taux de progression et mise en place de visualisations comparatives. L’ergonomie du rapport a été optimisée avec des boutons de navigation et des infobulles personnalisées.</p>
+
+      <p><strong>Résultats :</strong> Le tableau de bord permettait à la direction d’analyser rapidement les activités des antennes et d’ajuster les objectifs trimestriels. Il a été présenté en comité de pilotage et adopté comme support régulier.</p>
+
+      <p><strong>Leçons tirées :</strong> Importance de la clarté visuelle et de la cohérence graphique pour un reporting décisionnel efficace.</p>
+
+      <div class="modal-gallery">
+        <img src="images/proj-suivi.png" alt="Dashboard Suivi activité">
+        <img src="images/proj-suivi2.png" alt="Visualisation KPI activité">
+      </div>
+
+      <p><strong>Technologies :</strong> Power BI, DAX, Data Modeling, UX Design BI.</p>
     </div>
   </dialog>
 
+
+  <!-- 🌟 PROJET : Participation du réseau -->
   <dialog class="proj-modal" id="proj-reseau">
     <button class="modal-close" data-close>&times;</button>
     <div class="modal-body">
       <h4>Participation du réseau</h4>
-      <p>Analyse de la contribution des acteurs via Power BI et visualisations interactives.</p>
+
+      <p><strong>Contexte :</strong> Projet mené pour évaluer la participation des structures régionales et partenaires dans le cadre de la stratégie nationale du réseau. L’enjeu principal était de rendre visible la contribution des acteurs et d’identifier les zones moins actives.</p>
+
+      <p><strong>Objectifs :</strong> 
+        <ul>
+          <li>Créer un tableau de bord Power BI recensant toutes les participations d’acteurs,</li>
+          <li>Permettre des filtres multi-niveaux (région, dispositif, partenaire),</li>
+          <li>Faciliter la lecture des indicateurs stratégiques en réunion nationale.</li>
+        </ul>
+      </p>
+
+      <p><strong>Méthodologie :</strong> Extraction et harmonisation des données de participation issues de différents outils internes. Intégration dans Power BI, création de relations entre les tables, et mise en page dynamique. Des KPI visuels ont été conçus avec des barres de progression et des cartes géographiques interactives.</p>
+
+      <p><strong>Résultats :</strong> L’outil a permis d’améliorer la transparence et la communication des résultats entre les entités régionales. Il a également servi de base pour de futurs indicateurs de performance collective.</p>
+
+      <p><strong>Leçons tirées :</strong> La visualisation géographique a renforcé l’impact du tableau de bord, rendant les données plus parlantes pour des non-spécialistes.</p>
+
+      <div class="modal-gallery">
+        <img src="images/proj-reseau.png" alt="Tableau de bord Participation réseau">
+        <img src="images/proj-reseau2.png" alt="Carte Power BI">
+      </div>
+
+      <p><strong>Technologies :</strong> Power BI, Visualisation géographique, DAX.</p>
     </div>
   </dialog>
 
+
+  <!-- 🌟 PROJET : Visuels Deneb -->
   <dialog class="proj-modal" id="proj-deneb">
     <button class="modal-close" data-close>&times;</button>
     <div class="modal-body">
-      <h4>Visuels Deneb</h4>
-      <p>Création de visuels JSON personnalisés dans Power BI pour enrichir les rapports.</p>
+      <h4>Création de visuels Deneb</h4>
+
+      <p><strong>Contexte :</strong> Certains besoins de visualisation Power BI ne pouvaient pas être couverts par les visuels natifs. Le projet visait à concevoir des visuels personnalisés à l’aide de <em>Deneb</em>, un outil permettant d’intégrer des graphiques créés en langage JSON/Vega-Lite.</p>
+
+      <p><strong>Méthodologie :</strong> Étude des besoins, apprentissage de la structure JSON des visuels, création de prototypes pour des graphiques radar, des barres empilées et des diagrammes dynamiques. Intégration directe dans Power BI avec paramétrage des interactions.</p>
+
+      <p><strong>Résultats :</strong> Plusieurs visuels ont été intégrés dans les dashboards internes, notamment un graphique de performance multi-dimensionnelle et une jauge de progression. Ces visuels ont permis d’améliorer la clarté et l’esthétique des rapports.</p>
+
+      <p><strong>Leçons tirées :</strong> Découverte de la logique des bibliothèques de visualisation avancée et renforcement des compétences en développement visuel personnalisé.</p>
+
+      <div class="modal-gallery">
+        <img src="images/proj-deneb.png" alt="Visuels Deneb Power BI">
+        <img src="images/proj-deneb2.png" alt="Prototype JSON Vega">
+      </div>
+
+      <p><strong>Technologies :</strong> Power BI, Deneb (JSON / Vega-Lite).</p>
     </div>
   </dialog>
 
+
+  <!-- 🌟 PROJET : Vidéos tutoriels -->
   <dialog class="proj-modal" id="proj-video">
     <button class="modal-close" data-close>&times;</button>
     <div class="modal-body">
       <h4>Vidéos tutoriels</h4>
-      <p>Conception de supports explicatifs internes pour former les utilisateurs.</p>
+
+      <p><strong>Contexte :</strong> Face à la demande croissante de formation interne, l’objectif était de concevoir des vidéos explicatives destinées aux collaborateurs pour favoriser l’adoption des outils Power BI et Notion.</p>
+
+      <p><strong>Méthodologie :</strong> Rédaction de scripts pédagogiques, enregistrement avec OBS Studio, montage sur Canva et intégration sur l’intranet. Les vidéos couvraient les thématiques suivantes : navigation dans Power BI, création de mesures DAX simples, et organisation documentaire sous Notion.</p>
+
+      <p><strong>Résultats :</strong> Plus d’une dizaine de tutoriels publiés, utilisés lors des sessions d’accueil des nouveaux arrivants. Les vidéos ont permis d’uniformiser les pratiques et de réduire les erreurs récurrentes.</p>
+
+      <p><strong>Leçons tirées :</strong> Compréhension des principes de vulgarisation technique et de communication visuelle.</p>
+
+      <div class="modal-gallery">
+        <img src="images/proj-video.png" alt="Vidéo tutoriel Power BI">
+        <img src="images/proj-video2.png" alt="Montage tutoriel">
+      </div>
+
+      <p><strong>Outils :</strong> Canva, OBS Studio, Power BI, Notion.</p>
     </div>
   </dialog>
 
+
+  <!-- 🌟 PROJET : Base Notion -->
   <dialog class="proj-modal" id="proj-notion-db">
     <button class="modal-close" data-close>&times;</button>
     <div class="modal-body">
-      <h4>Base Notion</h4>
-      <p>Base documentaire centralisée pour les procédures et documents internes.</p>
+      <h4>Base de données Notion</h4>
+
+      <p><strong>Contexte :</strong> Afin de centraliser les ressources documentaires, une base Notion collaborative a été développée pour stocker et organiser les procédures internes, rapports et modèles Power BI.</p>
+
+      <p><strong>Méthodologie :</strong> Structuration d’une base à plusieurs niveaux (par service, type de document et usage), définition de modèles de fiches standardisées, et création d’un tableau de bord d’accès rapide pour les utilisateurs.</p>
+
+      <p><strong>Résultats :</strong> Amélioration de la circulation de l’information et réduction des doublons documentaires. L’espace Notion est désormais utilisé quotidiennement par l’ensemble des collaborateurs de l’équipe.</p>
+
+      <p><strong>Leçons tirées :</strong> Sensibilisation à la conception d’outils collaboratifs simples et intuitifs.</p>
+
+      <div class="modal-gallery">
+        <img src="images/proj-notion.png" alt="Base Notion">
+        <img src="images/proj-notion2.png" alt="Structure de base Notion">
+      </div>
+
+      <p><strong>Outils :</strong> Notion, Power BI, Structuration documentaire.</p>
     </div>
   </dialog>
 
+
+  <!-- 🌟 PROJET : Fiches Notion -->
   <dialog class="proj-modal" id="proj-notion-fiches">
     <button class="modal-close" data-close>&times;</button>
     <div class="modal-body">
-      <h4>Fiches Notion</h4>
-      <p>Guides pratiques et bonnes pratiques Power BI, automatisation et outils.</p>
+      <h4>Fiches Notion pratiques</h4>
+
+      <p><strong>Contexte :</strong> Dans la continuité du projet Notion, des fiches explicatives ont été créées pour accompagner les collaborateurs dans l’utilisation des outils internes.</p>
+
+      <p><strong>Méthodologie :</strong> Création de modèles uniformes sur Notion, structuration par thématique (Power BI, automatisation, bonnes pratiques) et insertion de captures d’écran illustratives.</p>
+
+      <p><strong>Résultats :</strong> Ces fiches servent de support à la montée en compétence des nouveaux arrivants et constituent une base de connaissances interne.</p>
+
+      <p><strong>Leçons tirées :</strong> Approfondissement des bonnes pratiques UX pour la rédaction de guides clairs et visuellement attrayants.</p>
+
+      <div class="modal-gallery">
+        <img src="images/proj-fiches.png" alt="Fiche Notion Power BI">
+        <img src="images/proj-fiches2.png" alt="Notion Guide exemple">
+      </div>
+
+      <p><strong>Outils :</strong> Notion, Documentation interne.</p>
     </div>
   </dialog>
 
@@ -641,3 +802,4 @@
   </script>
 </body>
 </html>
+
