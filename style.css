@@ -266,6 +266,10 @@ a{color: var(--accent-1); transition: all .18s ease}
 }
 .proj-thumb img{width:100%; height: 180px; object-fit: cover; display:block}
 
+/* Pour les graphiques et les schémas : on affiche l'image entière plutôt que de la rogner */
+.proj-thumb.fit{background:#fff}
+.proj-thumb.fit img{object-fit: contain; padding: 8px}
+
 /* Cadre de remplacement quand aucune image n'est disponible */
 .proj-thumb.is-empty{
   height: 180px;
